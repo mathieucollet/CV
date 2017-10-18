@@ -1,0 +1,233 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'sansationbold';
+    src: url('../font/nevis.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* ------------------------ Début du CSS ---------------------- */
+html {
+    color: #686a6a;
+    font-family: 'sansationbold';
+    font-variant: small-caps;
+}
+
+
+body {
+    background: #D0B6B5;
+    height: 95vh;
+
+}
+
+.page {
+    margin-top: 2.5vh;
+    margin-left: 100px;
+    margin-right: 100px;
+    box-shadow: 0 1px 3px black;
+    margin-bottom: 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bande {
+    height: 3%;
+    width: 100%;
+    background: #686a6a;
+    margin: 0px;
+    padding: 0px;
+}
+
+.titre {
+    height: 100px;
+    margin: auto;
+    padding-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 400%;
+    display: flex;
+    justify-content: center;
+}
+
+header p {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 140%;
+}
+
+header {
+    background: #e2dddd;
+    height: 20%;
+}
+
+h1 {
+    letter-spacing: 10px;
+}
+
+h1:nth-child(1) {
+        margin-right: 30px;
+}
+
+main {
+    background: white;
+    height: 47%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 60px;
+}
+
+main article {
+    background: white;
+    height: 100%;
+    width: 30%;
+    text-align: center;    
+}
+
+main article h2 {
+    width: 50%;
+    height: 30px;
+    line-height: 30px;
+    margin-top: -15px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 200%;
+}
+
+ul {
+    padding-top: 40px;
+}
+
+ul li {
+    padding-top: 10px;
+}
+
+footer {
+    height: 30%;
+    background: #7EC9AB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.contact {
+    padding-top: 30px;
+    line-height: 18px;
+}
+
+.contact p:nth-last-child(-n+2){
+    margin-top: 10px;
+}
+
+.rezos {
+    padding-top: 30px;
+}
+
+.rezos a:nth-child(-n+2) {
+    padding-right: 50px;
+}
+
+/* --------------------------- Media Queries ----------------------- */
+
+@media only screen and (max-width: 1000px) {
+    .page {
+        margin: 0;
+    }
+    .bande {
+        display: none;
+    }
+    body {
+        height: 100%;
+    }
+    header {
+        height: 30%;
+    } 
+    header p {
+        padding-bottom: 40px;
+    }
+    main {
+        flex-direction: column;
+        height: 100%;
+        padding-top: 40px;
+    }
+    main article {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    main artice h2 {
+        margin-top: 0px;
+    }
+    
+    main article ul {
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    
+    article:nth-child(3) {
+        padding-bottom: 30px;
+    }
+    footer {
+        padding-bottom: 30px;
+    }
+    .titre {
+        font-size: 300%;
+    }
+    header p {
+        font-size: 100%;
+    }
+}
