@@ -380,6 +380,8 @@ article li {
     }
     body {
         height: 100%;
+        width: 100%;
+        min-width: 640px;
     }
     header {
         height: 30%;
