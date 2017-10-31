@@ -16,10 +16,10 @@
     font-family: 'slim_jimregular';
     src: url('../font/SlimJim-webfont.eot');
     src: url('../font/SlimJim-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/SlimJim-webfont.woff2') format('woff2'),
-         url('../font/SlimJim-webfont.woff') format('woff'),
-         url('../font/SlimJim-webfont.ttf') format('truetype'),
-         url('../font/SlimJim-webfont.svg#slim_jimregular') format('svg');
+    url('../font/SlimJim-webfont.woff2') format('woff2'),
+    url('../font/SlimJim-webfont.woff') format('woff'),
+    url('../font/SlimJim-webfont.ttf') format('truetype'),
+    url('../font/SlimJim-webfont.svg#slim_jimregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -37,7 +37,6 @@ html {
     color: #686a6a;
     font-family: 'slim_jimregular';
 }
-
 
 body {
     background: rgba(183, 183, 183, 0.21);
