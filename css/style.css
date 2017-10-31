@@ -1,172 +1,46 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/* ------------------------ Polices ---------------------- */
+
+@font-face {
+    font-family: 'nerisblack';
+    src: url('../font/Neris-Black-webfont.eot');
+    src: url('../font/Neris-Black-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/Neris-Black-webfont.woff2') format('woff2'),
+    url('../font/Neris-Black-webfont.woff') format('woff'),
+    url('../font/Neris-Black-webfont.ttf') format('truetype'),
+    url('../font/Neris-Black-webfont.svg#nerisblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'slim_jimregular';
+    src: url('../font/SlimJim-webfont.eot');
+    src: url('../font/SlimJim-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/SlimJim-webfont.woff2') format('woff2'),
+         url('../font/SlimJim-webfont.woff') format('woff'),
+         url('../font/SlimJim-webfont.ttf') format('truetype'),
+         url('../font/SlimJim-webfont.svg#slim_jimregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ------------------------ Couleurs---------------------- 
+Bleu : #538fba
+Gris police : #686a6a
+Gris fond : rgba(183, 183, 183, 0.21)
+Gris header : rgba(183, 183, 183, 0.38)
 */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-@font-face {
-    font-family: 'nevis';
-    src: url('../font/nevis.ttf');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: "sansation";
-    src: url("../font/Sansation_Bold.eot?") format("eot"),
-    url("../font/Sansation_Bold.woff") format("woff"),
-    url("../font/Sansation_Bold.ttf") format("truetype"),
-    url("../font/Sansation_Bold.svg#SansationBold") format("svg");
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-/* ------------------------ Début du CSS ---------------------- */
+/* ------------------------ Page ---------------------- */
 
 html {
     color: #686a6a;
-    font-family: 'sansation';
-    font-variant: small-caps;
+    font-family: 'slim_jimregular';
 }
 
 
 body {
     background: rgba(183, 183, 183, 0.21);
-    min-height: 900px;
-    height: 95vh;
 
 }
 
@@ -174,10 +48,15 @@ body {
     margin-top: 2.5vh;
     margin-left: auto;
     margin-right: auto;
+    -webkit-box-shadow: 0 1px 3px black;
     box-shadow: 0 1px 3px black;
-    margin-bottom: 2.5vh;
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 90%;
 }
@@ -191,13 +70,19 @@ body {
     padding: 0px;
 }
 
+/* ------------------------ Header ---------------------- */
+
 .titre {
     height: 100px;
     margin: auto;
     padding-top: 30px;
     text-align: center;
     text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: auto;
     font-size: 400%;
@@ -211,28 +96,33 @@ h1 {
 header p {
     text-align: center;
     padding-bottom: 30px;
-    font-size: 140%;
+    font-size: 150%;
 }
 
 header {
     background: rgba(183, 183, 183, 0.38);
     height: 17%;
     min-height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     position: relative
 }
 
 header img {
     width: 159px;
+    -webkit-box-shadow: 0 1px 3px black;
     box-shadow: 0 1px 3px black;
     position: absolute;
     top: 10px;
     left: 5px;
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+    -webkit-filter: FlipH;
     filter: FlipH;
     -ms-filter: "FlipH";
 }
@@ -240,6 +130,10 @@ header img {
 .math {
     display: none;
 }
+
+/* ------------------------ Main ---------------------- */
+
+/*Logos*/
 
 .ocr {
     margin-top: 0;
@@ -254,18 +148,10 @@ header img {
     padding-top: 0;
 }
 
-.classrooms li {
-    display: flex;
-    flex-direction: row;
-    width: 60%;
-    justify-content: space-between;
-    margin: auto;
-}
-
 .chrono {
     height: 17px;
     width: 14.55625px;
-    padding-right: 3%;
+    padding-right: 7px;
 }
 
 .validate {
@@ -274,42 +160,66 @@ header img {
 }
 
 .wizdeo {
-    height: 45px;
+    height: 40px;
 }
 
-.spacing {
-    letter-spacing: 0.3em;
-}
+/*Text settings*/
 
 .nospacing {
-    letter-spacing: -0.2em;
-}
-
-.nospacing2 {
     letter-spacing: -0em;
 }
 
 
 .small {
     padding-top: 9px;
-    font-size: 0.8em;
+    font-size: 0.9em;
     text-align: center;
-    line-height: 7px
+    line-height: 2px;
+}
+
+.small2 {
+    padding-top: 9px;
+    font-size: 0.9em;
+    text-align: center;
+    line-height: 13px;
 }
 
 .exp {
     padding-top: 110px;
 }
 
+/*main*/
+
+.classrooms li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 60%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: auto;
+}
+
 h1 {
-    font-family: 'nevis';
+    font-family: 'nerisblack';
     letter-spacing: 10px;
 }
 
 main {
     background: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     height: 60%;
     min-height: 0px;
@@ -322,16 +232,21 @@ main {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
-
-
 
 .article {
     padding-top: 30px;
     padding-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 100%;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: right;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     width: 100%;
 }
@@ -356,35 +271,49 @@ main article h2 {
 }
 
 .art1 {
+    -webkit-box-ordinal-group: 7;
+    -ms-flex-order: 6;
     order: 6;
 }
 
 .art2 {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
     order: 4;
 }
 
 .art3 {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
     order: 2;
 }
 
 .river1 {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
     order: 1;
 }
 
 .river2 {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
     order: 3;
 }
 
 .river3 {
+    -webkit-box-ordinal-group: 6;
+    -ms-flex-order: 5;
     order: 5;
 }
 
 .river5 {
+    -webkit-box-ordinal-group: 8;
+    -ms-flex-order: 7;
     order: 7;
 }
 
 .art3 p {
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 ul {
@@ -395,46 +324,7 @@ ul li {
     padding-top: 11px;
 }
 
-footer {
-    height: 40%;
-    min-height: 235px;
-    background: #538fba;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.contact {
-    padding-top: 30px;
-    line-height: 18px;
-    color: white;
-}
-
-.contact p:nth-last-child(-n + 2) {
-    margin-top: 10px;
-}
-
-p a {
-    text-decoration: none;
-    color: white;
-}
-
-.rezos {
-    padding-top: 30px;
-}
-
-.rezos a:nth-child(-n + 2) {
-    padding-right: 50px;
-}
-
-.art3 li {
-    display: flex;
-    height: 27px;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-}
+/*barres*/
 
 .progress-bar1 {
     width: 80%;
@@ -464,7 +354,11 @@ p a {
     width: 100%;
     position: absolute;
     line-height: 28px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -479,7 +373,6 @@ p a {
     width: 20%;
     display: block;
 }
-
 
 .bar1 {
     background: rgba(244, 156, 19, 0.75);
@@ -572,6 +465,64 @@ p a {
     background: #35495E;
 }
 
+/* ------------------------ Main ---------------------- */
+
+footer {
+    height: 40%;
+    min-height: 235px;
+    background: #538fba;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact {
+    padding-top: 30px;
+    line-height: 18px;
+    color: white;
+}
+
+.contact p:nth-last-child(-n + 2) {
+    margin-top: 10px;
+}
+
+p a {
+    text-decoration: none;
+    color: white;
+}
+
+.rezos {
+    padding-top: 30px;
+}
+
+.rezos a:nth-child(-n + 2) {
+    padding-right: 50px;
+}
+
+.art3 li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 27px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+}
+
+
 /* --------------------------- Media Queries ----------------------- */
 
 @media only screen and (max-width: 1200px) {
@@ -582,6 +533,7 @@ p a {
         margin-right: auto;
         padding: none;
         width: 90%;
+        -webkit-box-shadow: none;
         box-shadow: none;
     }
     .bande {
@@ -595,10 +547,20 @@ p a {
     }
     header {
         height: 30%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-shadow: 0 -1px 3px black;
         box-shadow: 0 -1px 3px black;
         background: rgba(183, 183, 183, 0.51);
     }
@@ -611,12 +573,12 @@ p a {
         width: 100%;
         padding-top: 0;
         margin-top: 0;
-        -moz-transform: scaleX(-1);
-        -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
         transform: scaleX(-1);
+        -webkit-filter: FlipH;
         filter: FlipH;
         -ms-filter: "FlipH";
+        -webkit-box-shadow: none;
         box-shadow: none;
     }
     header p {
@@ -624,15 +586,27 @@ p a {
 
     }
     main {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
         justify-content: flex-start;
         height: 100%;
         padding-top: 0;
         margin-top: 0;
     }
     .article {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         padding: 0;
         margin: 0;
@@ -644,9 +618,9 @@ p a {
 
     main article h2 {
         width: 125%;
-        height: 40px;
-        line-height: 47px;
-        margin-top: -25px;
+        height: 45px;
+        line-height: 40px;
+        margin-top: 0px;
         margin-left: -12.5%;
         font-size: 200%;
         background: #538fba;
@@ -654,8 +628,8 @@ p a {
     }
 
     main article ul {
-        padding-top: 30px;
-        margin-top: 0px;
+        padding-top: 0px;
+        margin-top: 30px;
     }
 
     main article li {
@@ -663,6 +637,7 @@ p a {
         padding-right: 0;
     }
     footer {
+        -webkit-box-shadow: 0 1px 3px black;
         box-shadow: 0 1px 3px black;
     }
 
@@ -677,7 +652,7 @@ p a {
         padding-bottom: 20px;
     }
     header p {
-        font-size: 100%;
+        font-size: 110%;
         padding-bottom: 20px;
         width: 80%;
     }
@@ -688,10 +663,11 @@ p a {
         height: 100%;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 25px;
+        padding-top: 0px;
         padding-bottom: 40px;
         padding-left: 10%;
         padding-right: 10%;
+        -webkit-box-shadow: 0 1px 3px 0 black;
         box-shadow: 0 1px 3px 0 black;
     }
 
@@ -700,17 +676,21 @@ p a {
         padding-bottom: 30px;
         text-align: justify;
         width: 80%;
+        -webkit-box-shadow: 0 1px 3px black;
         box-shadow: 0 1px 3px black;
         margin: 0;
         padding-left: 10%;
         padding-right: 10%;
     }
     .barrette {
+        list-style-type: none;
         width: 100%;
         height: 20px;
+        min-height: 20px;
         background: rgba(183, 183, 183, 0.21);
         margin-left: auto;
         margin-right: auto;
+        -webkit-box-shadow: inset 0 5px 5px -5px black;
         box-shadow: inset 0 5px 5px -5px black;
     }
     .progress-bar1 {
