@@ -135,16 +135,12 @@ header img {
 /*Logos*/
 
 .ocr {
-    margin-top: 0;
+    margin-top: 10px;
     height: 55px;
 }
 
 .mds {
     height: 35px;
-}
-
-.classrooms {
-    padding-top: 0;
 }
 
 .chrono {
@@ -316,7 +312,13 @@ main article h2 {
 }
 
 ul {
-    padding-top: 30px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.classrooms {
+    padding-top: 0;
+    margin-top: 0;
 }
 
 ul li {
