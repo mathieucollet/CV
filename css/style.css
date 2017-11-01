@@ -40,6 +40,7 @@ html {
 
 body {
     background: rgba(183, 183, 183, 0.21);
+    margin-bottom: 20px;
 
 }
 
@@ -136,7 +137,7 @@ header img {
 
 .ocr {
     margin-top: 10px;
-    height: 55px;
+    height: 60px;
 }
 
 .mds {
@@ -156,6 +157,23 @@ header img {
 
 .wizdeo {
     height: 40px;
+}
+
+.certif {
+    width: 100%;
+}
+
+.test {
+    position: relative;
+    width: 40%;
+    margin: auto;
+}
+
+.croix {
+    width: 4%;
+    position: absolute;
+    top: 10%;
+    right: 10%;
 }
 
 /*Text settings*/
@@ -181,6 +199,11 @@ header img {
 
 .exp {
     padding-top: 110px;
+}
+
+.art2 a {
+    color: #686a6a;
+    text-decoration: none;
 }
 
 /*main*/
@@ -262,6 +285,7 @@ main article h2 {
     margin-top: -15px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
     font-size: 200%;
 }
 
@@ -277,7 +301,7 @@ main article h2 {
     order: 4;
 }
 
-.art3 {
+.art3, .test {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
@@ -466,7 +490,7 @@ ul li {
     background: #35495E;
 }
 
-/* ------------------------ Main ---------------------- */
+/* ------------------------ Footer ---------------------- */
 
 footer {
     height: 40%;
@@ -709,5 +733,9 @@ p a {
     .progress-text1 {
         height: 25px;
         line-height: 28px;
+    }
+    .test {
+        width: 100%;
+        box-shadow: 0 1px 3px black;
     }
 }
