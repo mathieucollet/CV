@@ -385,7 +385,34 @@ ul li {
     justify-content: space-between;
 }
 
+@-webkit-keyframes text {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes text {
+    0% {
+        opacity: 0;
+    }
+    66% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .progress-text1 p:nth-child(2) {
+    -webkit-animation-name: text;
+    -webkit-animation-duration: 2s;
+    animation: 3s ease-out 0s 1 text;
     display: block;
     width: 50%;
     text-align: right;
@@ -397,11 +424,32 @@ ul li {
     display: block;
 }
 
+@-webkit-keyframes appear {
+    0% {
+        width: 0;
+    }
+    100% {
+        min-width: auto;
+    }
+}
+
+@keyframes appear {
+    0% {
+        width: 0;
+    }
+    100% {
+        min-width: auto;
+    }
+}
+
 .bar1 {
     background: rgba(244, 156, 19, 0.75);
 }
 
 .bar1b {
+    -webkit-animation-name: appear;
+    -webkit-animation-duration: 2s;
+    animation: 2s ease-out 0s 1 appear;
     background: #E77E21;
     width: 64%;
 }
@@ -415,6 +463,9 @@ ul li {
 }
 
 .bar2b {
+    -webkit-animation-name: appear;
+    -webkit-animation-duration: 2s;
+    animation: 2s ease-out 0s 1 appear;
     background: #3997D3;
     width: 64%;
 }
@@ -428,6 +479,9 @@ ul li {
 }
 
 .bar3b {
+    -webkit-animation-name: appear;
+    -webkit-animation-duration: 2s;
+    animation: 2s ease-out 0s 1 appear;
     background: #777BB4;
     width: 32%;
 }
@@ -441,6 +495,9 @@ ul li {
 }
 
 .bar4b {
+    -webkit-animation-name: appear;
+    -webkit-animation-duration: 2s;
+    animation: 2s ease-out 0s 1 appear;
     background: rgba(251, 188, 21, 0.54);
     width: 20%;
 }
@@ -454,6 +511,9 @@ ul li {
 }
 
 .bar5b {
+    -webkit-animation-name: appear;
+    -webkit-animation-duration: 2s;
+    animation: 2s ease-out 0s 1 appear;
     background: #3997D3;
     width: 5%;
 }
@@ -467,6 +527,9 @@ ul li {
 }
 
 .bar6b {
+    -webkit-animation-name: appear;
+    -webkit-animation-duration: 2s;
+    animation: 2s ease-out 0s 1 appear;
     background: #3997D3;
     width: 5%;
 }
@@ -480,6 +543,9 @@ ul li {
 }
 
 .bar7b {
+    -webkit-animation-name: appear;
+    -webkit-animation-duration: 2s;
+    animation: 2s ease-out 0s 1 appear;
     background: #3997D3;
     width: 5%;
 }
