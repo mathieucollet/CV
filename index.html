@@ -1,169 +1,463 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    
+
     <title>CV de Mathieu Collet</title>
     <meta name="description" content="Curriculum Vitae de Mathieu Collet." />
 
-    <!-- Twitter Card data -->
+    <!-- #-------------------------------# -->
+    <!-- #- Twitter Card Data           -# -->
+    <!-- #-------------------------------# -->
+
     <meta name="twitter:card" value="Curriculum Vitae de Mathieu Collet.">
 
-    <!-- Open Graph data -->
+    <!-- #-------------------------------# -->
+    <!-- #- Open Graph Data             -# -->
+    <!-- #-------------------------------# -->
+
     <meta property="og:title" content="CV de Mathieu Collet" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="mathieucollet.github.io" />
     <meta property="og:image" content="img/math.jpg" />
     <meta property="og:description" content="Curriculum Vitae de Mathieu Collet." />
+
+    <!-- #-------------------------------# -->
+    <!-- #- CSS                         -# -->
+    <!-- #-------------------------------# -->
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- #-------------------------------# -->
+    <!-- #- Icones                      -# -->
+    <!-- #-------------------------------# -->
+
     <link rel="shortcut icon" href="icons/favicon.ico">
     <link rel="icon" type="image/png" href="icons/favicon-192x192.png" sizes="192x192">
     <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180x180.png">
-    
+
+    <!-- #-------------------------------# -->
+    <!-- #- Polices                     -# -->
+    <!-- #-------------------------------# -->
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Hammersmith+One|Oswald:400,700" rel="stylesheet">
 </head>
 
-<body>
+<body id="accueil">
+    <!-- #-------------------------------# -->
+    <!-- #- HEADER                      -# -->
+    <!-- #-------------------------------# -->
 
-    <div class="page">
-        <div class="bande">
+    <!-- #-------------------------------# -->
+    <!-- #- IMAGE DU HEADER             -# -->
+    <!-- #-------------------------------# -->
 
+    <div class="imgHeader">
+        <h1>Mathieu Collet</h1>
+        <div class="trait"></div>
+        <p>Etudiant développeur</p>
+        <div class="arrows">
+            <a href="#aPropos" class="fleches">
+            <img src="img/arrow2.png" alt="Flèche" class="ar1">
+            <img src="img/arrow2.png" alt="Flèche" class="ar2">
+            <img src="img/arrow2.png" alt="Flèche" class="ar3">
+            </a>
         </div>
+    </div>
+    <div id="aPropos"></div>
+
+    <div class="header">
+
         <header>
-            <div class="titre">
-                <h1>Mathieu Colle<span class="nospacing">t</span></h1>
-            </div>
-            <p>Étudiant de 32 ans - En reconversion professionnelle - Passionné et assidu </p>
-            <img src="img/math.jpg" alt="photo de Mathieu Collet">
-            <img src="img/math.png" alt="photo de Mathieu Collet" class="math">
+
+            <!-- #-------------------------------# -->
+            <!-- #- TEXTE HEADER                -# -->
+            <!-- #-------------------------------# -->
+
+            <div class="headerTop"></div>
+
+            <!-- #-------------------------------# -->
+            <!-- #- MENU / NAV                  -# -->
+            <!-- #-------------------------------# -->
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#aPropos" class="hov1">À propos</a></li>
+                    <li><a href="#competences" class="hov2">Compétences</a></li>
+                    <li><a href="#formations" class="hov3">Formations</a></li>
+                    <li><a href="#experiences" class="hov4">Expériences</a></li>
+                    <li><a href="#contact2" class="hov5">Contact</a></li>
+                </ul>
+            </nav>
         </header>
+    </div>
 
-        <main>
-            <p class="pres">Je m’appelle Mathieu Collet, j’ai 32 ans et je suis étudiant en développement numérique dans la région rennaise. Après avoir exercé le métier de chauffeur poids-lourd pendant neuf ans, je reviens à mes premières amours : le développement. Élève assidu avec de très bons résultats, j’adore créer des sites Web clairs, élégants et faciles d’utilisation. Passionné par les technologies Web et les outils HTML, CSS, PHP et JavaScript, j’y consacre chaque jour beaucoup de temps afin de m’améliorer.</p>
-            <div class="article">
-                <div class="barrette river1"></div>
-                <article class="art1">
 
-                    <h2>Expériences</h2>
+    <!-- #-------------------------------# -->
+    <!-- #- MAIN                        -# -->
+    <!-- #-------------------------------# -->
+
+    <main>
+
+        <!-- #-------------------------------# -->
+        <!-- #- A PROPOS                    -# -->
+        <!-- #-------------------------------# -->
+
+        <section class="sec1">
+            <div class="top">
+                <div class="topb one">
+                    <h1>Mon histoire</h1>
+                </div>
+            </div>
+            <img src="img/photo.png" alt="Photographie" class="photo">
+            <div class="apropos">
+
+                <!-- #-------------------------------# -->
+                <!-- #- PHOTO A PROPOS              -# -->
+                <!-- #-------------------------------# -->
+                <div class="photoContainer">
+                    <img src="img/math2.png" alt="photo de Mathieu Collet">
+                </div>
+
+                <!-- #-------------------------------# -->
+                <!-- #- TEXT A PROPOS               -# -->
+                <!-- #-------------------------------# -->
+
+                <div class="aproposText">
+                    <h2>Un parcours atypique</h2>
+                    <p>À 32 ans, je suis un jeune étudiant en développement numérique dans la région rennaise. Après avoir été chauffeur poids lourd pendant neuf ans, j’ai décidé de transformer ma passion pour le Web en métier.</p>
+                    <p class="part2">Élève assidu avec de bons résultats, j’adore créer des interfaces claires, élégantes et faciles d’utilisation. Je suis passionné par les technologies Web et je porte une grande attention à l’expérience utilisateur et au design inclusif.</p>
+                    <p>Dans le cadre de mes études, je suis à la recherche d’un stage du 03 avril au 08 juin 2018 (au minimum !). N’hésitez pas à prendre contacte avec moi.</p>
+                </div>
+            </div>
+
+            <!-- #-------------------------------# -->
+            <!-- #- LIEN => COMPETENCES         -# -->
+            <!-- #-------------------------------# -->
+
+            <div id="competences"></div>
+        </section>
+
+        <!-- #-------------------------------# -->
+        <!-- #- COMPETENCES                 -# -->
+        <!-- #-------------------------------# -->
+
+        <section class="sec2">
+            <div class="top">
+                <div class="topb two">
+                    <h1>Compétences</h1>
+                </div>
+            </div>
+            <img src="img/dev.png" alt="Developpeur" class="imgDev">
+            <div class="comp">
+
+                <!-- #-------------------------------# -->
+                <!-- #- BARRES DE PROGRESSION       -# -->
+                <!-- #-------------------------------# -->
+
+                <div class="barres">
                     <ul>
-                        <li><a href="https://wizdeo.com/fr/" title="wizdeo.com" target="_blank"><img src="img/wizdeo.png" alt="Wizdeo" class="wizdeo"></a></li>
-                        <li>Stage découverte à Cesson-Sévigne</li>
-                        <li class="small2">- Travail en méthode agile (sprint, scrubs etc...) </li>
-                        <li class="small">- Découverte des différents metiers de Dev</li>
-                        <li class="exp">Chauffeur Poids-Lourd durant neuf ans</li>
-                    </ul>
-                </article>
-                <div class="barrette river2"></div>
-                <article class="art2">
-
-                    <h2>Formations</h2>
-
-                    <ul>
-                        <li><a href="http://www.mydigitalschool.com/" title="www.mydigitalschool.com" target="_blank"><img src="img/mds2.png" alt="My Digital School" class="mds"></a></li>
-                        <li>Bachelor Developpeur Digital<br>Première année - Rennes</li>
-                        <li><a href="https://openclassrooms.com/" title="openclassrooms.com" target="_blank"><img src="img/ocr.png" alt="OpenClassRooms" class="ocr"></a></li>
-                    </ul>
-                    <ul class="classrooms">
                         <li>
-                            <p><a href="certificat_html_css.html" title="Voir le certificat">HTML 5 / CSS 3</a></p><img src="img/validate2.png" alt="Validate" class="validate"></li>
-                        <li>
-                            <p><a href="certificat_php_mysql.html" title="Voir le certificat">PHP / MySQL</a></p><img src="img/validate2.png" alt="Validate" class="validate"></li>
-                        <li>
-                            <p>JavaScript</p> <img src="img/chrono2.png" alt="Chrono" class="chrono"></li>
-                    </ul>
-                </article>
-                <div class="barrette river3"></div>
-                <article class="art3">
-
-                    <h2>Compétences</h2>
-                    <ul>
-                        <li>
-                            <div class="progress-bar1 bar1"></div>
-                            <div class="progress-bar1b bar1b"></div>
-                            <div class="progress-bar1c bar1c"></div>
-                            <div class="progress-text1 text1">
-                                <p>HTML</p>
-                                <p>80%</p>
-                            </div>
+                            <h2>Programmation</h2>
                         </li>
                         <li>
-                            <div class="progress-bar1 bar2"></div>
-                            <div class="progress-bar1b bar2b"></div>
-                            <div class="progress-bar1c bar2c"></div>
-                            <div class="progress-text1 text1">
-                                <p>CSS</p>
+                            <div class="progress-bar1 bar1"></div>
+                            <div class="progress-bar1b b1"></div>
+                            <div class="progress-bar1c bar1c"></div>
+                            <div class="text1">
+                                <p>HTML CSS</p>
                                 <p>80%</p>
                             </div>
                         </li>
                         <li>
                             <div class="progress-bar1 bar3"></div>
-                            <div class="progress-bar1b bar3b"></div>
+                            <div class="progress-bar1b b3"></div>
                             <div class="progress-bar1c bar3c"></div>
-                            <div class="progress-text1 text3">
-                                <p>PHP</p>
+                            <div class="text1">
+                                <p>PHP SQL</p>
                                 <p>60% - En cours</p>
                             </div>
                         </li>
                         <li>
                             <div class="progress-bar1 bar4"></div>
-                            <div class="progress-bar1b bar4b"></div>
+                            <div class="progress-bar1b b4"></div>
                             <div class="progress-bar1c bar4c"></div>
-                            <div class="progress-text1 text1">
+                            <div class="text1">
                                 <p>JS</p>
                                 <p>25% - En cours</p>
                             </div>
                         </li>
                         <li>
                             <div class="progress-bar1 bar5"></div>
-                            <div class="progress-bar1b bar5b"></div>
+                            <div class="progress-bar1b b5"></div>
                             <div class="progress-bar1c bar5c"></div>
-                            <div class="progress-text1 text1">
+                            <div class="text1">
                                 <p>JQuery</p>
-                                <p>A venir</p>
+                                <p>À venir</p>
                             </div>
                         </li>
                         <li>
                             <div class="progress-bar1 bar6"></div>
-                            <div class="progress-bar1b bar6b"></div>
+                            <div class="progress-bar1b b6"></div>
                             <div class="progress-bar1c bar6c"></div>
-                            <div class="progress-text1 text1">
-                                <p>WP</p>
-                                <p>A venir</p>
+                            <div class="text1">
+                                <p>WordPress</p>
+                                <p>À venir</p>
                             </div>
                         </li>
                         <li>
                             <div class="progress-bar1 bar7"></div>
-                            <div class="progress-bar1b bar7b"></div>
+                            <div class="progress-bar1b b7"></div>
                             <div class="progress-bar1c bar7c"></div>
-                            <div class="progress-text1 text1">
+                            <div class="text1">
                                 <p>Drupal</p>
-                                <p>A venir</p>
+                                <p>À venir</p>
+                            </div>
+                        </li>
+                        <li class="secondh2">
+                            <h2>Design</h2>
+                        </li>
+                        <li>
+                            <div class="progress-bar1 bar9"></div>
+                            <div class="progress-bar1b b9"></div>
+                            <div class="progress-bar1c bar9c"></div>
+                            <div class="text1">
+                                <p>Illustrator</p>
+                                <p>60% - En cours</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="progress-bar1 bar11"></div>
+                            <div class="progress-bar1b b11"></div>
+                            <div class="progress-bar1c bar11c"></div>
+                            <div class="text1">
+                                <p>Lightroom</p>
+                                <p>60% - En cours</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="progress-bar1 bar8"></div>
+                            <div class="progress-bar1b b8"></div>
+                            <div class="progress-bar1c bar8c"></div>
+                            <div class="text1">
+                                <p>Photoshop</p>
+                                <p>50% - En cours</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="progress-bar1 bar10"></div>
+                            <div class="progress-bar1b b10"></div>
+                            <div class="progress-bar1c bar10c"></div>
+                            <div class="text1">
+                                <p>InDesign</p>
+                                <p>À venir</p>
                             </div>
                         </li>
                     </ul>
-                </article>
-                <div class="barrette river5"></div>
+                </div>
+
+                <!-- #-------------------------------# -->
+                <!-- #- COMPETENCES AUTRES          -# -->
+                <!-- #-------------------------------# -->
+
+                <div class="compText">
+                    <h2>Divers</h2>
+                    <div class="compTextHarmo">
+                        <div>
+                            <h3>Méthode agile</h3>
+                            <p>Pratique des mêlées quotidiennes (ou stand up meeting) et utilisation des sprints en entreprise.</p>
+                        </div>
+                        <div>
+                            <h3>Gestion de projet</h3>
+                            <p>Travail tout au long de la scolarité en gestion de projet.</p>
+                        </div>
+                        <div>
+                            <h3>Veille informationnelle</h3>
+                            <p>Par passion et par nécessité, veille gérée avec Inoreader sur les langages, l'expérience utilisateur, le design inclusif et les nouvelles technologies. </p>
+                        </div>
+                        <div>
+                            <h3>SEO | E-commerce | Marketing</h3>
+                            <p>Quelques notions pour le moment, cela fait partie du programme.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- #-------------------------------# -->
+            <!-- #- LIEN => FORMATIONS          -# -->
+            <!-- #-------------------------------# -->
+
+            <div id="formations"></div>
+        </section>
+        <section class="sec3">
+            <div class="top">
+                <div class="topb three">
+                    <h1>Formation</h1>
+                </div>
+            </div>
+            <div class="formation">
+
+                <!-- #-------------------------------# -->
+                <!-- #- NEW FORMATION               -# -->
+                <!-- #-------------------------------# -->
+
+                <div class="new">
+                    <div class="imgMds">
+                        <a href="http://www.mydigitalschool.com/" title="www.mydigitalschool.com" target="_blank"><img src="img/mds2.png" alt="My Digital School"></a>
+                    </div>
+                    <img src="img/etudes.png" alt="Etudes" class="etudes">
+                    <div class="textMds">
+                        <h2>Bachelor Developpeur Digital<br>2017 - 2020 | Première année | Rennes</h2>
+                        <p class="part2">Le Bachelor Développeur digital est une formation en 3 ans qui permet de faire l’acquisition de la méthodologie de travail et de gestion d’un projet web ou mobile de sa conception, en passant par sa programmation et son développement.</p>
+                        <p>La première année s'articulte autour de l'assimilation des concepts et compétences techniques du web indispensables pour évoluer par la suite dans cet univers professionnel. S'y ajoute un bagage de compétences transversales (e-business, marketing, gestion de projet).</p>
+                        <p class="part2">Le détail du programme est disponnible sur <a href="https://www.mydigitalschool.com/bachelor-developpeur-digital-web?o=programme" title="Programme Bachelor Développeur Digital" target="_blank">le site de l'école</a>.</p>
+                    </div>
+                </div>
+                <div class="old">
+                    <div class="imgAftral">
+                        <a href="https://www.aftral.com" title="www.aftral.com" target="_blank"><img src="img/aftral.png" alt="Aftral"></a>
+                    </div>
+                    <div class="textAftral">
+                        <h2>Titre Pro Transport de marchandises<br>2007 - 2008 | Cesson-Sévigné</h2>
+                        <p>Cette formation qui dure 1 ans (dont 6 mois en entreprise) permet d'obtenir les permis C et EC et les compétences nécessaires à la conduite de véhicules lourds.</p>
+                    </div>
+                    <div class="imgOcr">
+                        <a href="https://openclassrooms.com/" title="openclassrooms.com" target="_blank"><img src="img/ocr.png" alt="Openclassrooms"></a>
+                    </div>
+                    <div class="textOcr">
+                        <h2>Cértificats de réussite<br>2017 - 20..</h2>
+                        <p>Openclassrooms me permets d'enrichir mes connaissances et de faire des mises en pratiques complémentaires.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="experiences"></div>
+        </section>
+        <section class="sec4">
+            <div class="top">
+                <div class="topb four">
+                    <h1>Expériences</h1>
+                </div>
+            </div>
+            <img src="img/exp.png" alt="Expériences" class="experiences">
+            <div class="exp">
+                <div class="systeme_onglets">
+                    <div class="onglets">
+                        <span class="onglet onglet_0" id="onglet_developpeur" onclick="javascript:change_onglet('developpeur');"></span>
+                        <span class="onglet_0 onglet" id="onglet_chauffeur" onclick="javascript:change_onglet('chauffeur');"></span>
+                        <span class="onglet_0 onglet" id="onglet_autres" onclick="javascript:change_onglet('autres');"></span>
+                    </div>
+                    <div class="contenu_onglets">
+                        <div class="contenu_onglet" id="contenu_onglet_developpeur">
+                            <div class="dev">
+                                <div class="devUn">
+                                    <a href="https://wizdeo.com/fr/" title="wizdeo.com" target="_blank"><img src="img/wizdeo.png" alt="Wizdeo" class="wizdeo"></a>
+                                    <h2>Analytics & MCN | Cesson-Sévigné</h2>
+                                    <p>Stage au coeur de cette société qui commercialise du Big Data Youtube et gère la promotion et la monétisation de Youtuber.</p>
+                                    <p class="part2">Découverte des différents métier de développeur et du travail en méthode agile (sprints, scrums...).</p>
+                                </div>
+                                <div class="sep"></div>
+                                <div class="devDeux">
+                                    <h1>?</h1>
+                                    <h2>Bientôt ici : vôtre société !</h2>
+                                    <p>En effet, je suis à la recherche d'une entreprise pour réaliser un stage en tant que développeur. N'hésitez pas à me contacter.</p>
+                                    <p class="part2">Le stage doit durer au minimum du 03 avril au 08 juin, mais je serai ravi de partager plus de temps avec vous.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contenu_onglet" id="contenu_onglet_chauffeur">
+                            <div class="dev">
+                                <div class="devUn">
+                                    <div class="devUnQuart">
+                                        <h2>Transports Celsius | 2009 - 2016</h2>
+                                        <p>Société de transports de produits surgelés.</p>
+                                        <p class="part2">Chauffeur poids lourd régional, transport de lots. <br>Formateur au près des nouveaux salariés.</p>
+                                    </div>
+                                    <div class="sep2"></div>
+                                    <div class="sep3"></div>
+                                    <div class="devUnQuart">
+                                        <h2>Transports Corre | 2 mois en 2009</h2>
+                                        <p>Société de transports frigorifique.</p>
+                                        <p class="part2">Chauffeur poids lourd régional, transport de lots.</p>
+                                    </div>
+                                </div>
+                                <div class="sep"></div>
+                                <div class="devDeux">
+                                    <div class="sep3"></div>
+                                    <div class="devUnQuart">
+                                        <h2>Routiers Bretons | 4 mois en 2008</h2>
+                                        <p>Société de transports générique.</p>
+                                        <p class="part2">Chauffeur poids lourd régional, transport de lots et de messagerie.</p>
+                                    </div>
+                                    <div class="sep2"></div>
+                                    <div class="sep3"></div>
+                                    <div class="devUnQuart">
+                                        <h2>Mory Team | 2007 - 2008</h2>
+                                        <p>Société de transports générique, financeur de mon titre professionel.</p>
+                                        <p class="part2">Chauffeur poids lourd local, livraisons de messageries.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contenu_onglet" id="contenu_onglet_autres">
+                            <div class="autre">
+                                <h2>Petits boulots entre 2004 et 2007 à Rennes</h2>
+                                <ul>
+                                    <li>Dépannage informatique par téléphone au service interne des AGF (Allianz)</li>
+                                    <li>Nettoyage des rotatives chez Ouest France</li>
+                                    <li>Nombreuses activités ponctuels en intérim</li>
+                                    <li>Livraison de pizzas chez Speed Rabbit</li>
+                                    <li>Livraison de surgelés chez Maximo</li>
+                                    <li>Livraison de colis chez Colissimo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
-        </main>
+        </section>
+    </main>
 
-        <footer>
+    <!-- #-------------------------------# -->
+    <!-- #- FOOTER                      -# -->
+    <!-- #-------------------------------# -->
+
+    <footer>
+        <div class="foot">
             <div class="contact">
                 <p>5, rue des Cèdres</p>
                 <p>35150 Janzé</p>
                 <p>Tel : 06 32 48 24 08</p>
                 <p>Email : <a href="mailto:coco@mds.org">mayeut@gmail.com</a></p>
             </div>
-            <div class="rezos">
+            <div class="rezos" id="contact2">
                 <a href="https://www.linkedin.com/in/mathieu-collet-80a799151/" title="www.linkedin.com"><img src="img/linkedin.png" alt="LinkedIn"></a>
                 <a href="https://twitter.com/mayeut35" title="twitter.com"><img src="img/twitter.png" alt="Twitter"></a>
                 <a href="https://www.facebook.com/mathieu.collet.58" title="www.facebook.com"><img src="img/facebook.png" alt="Facebook"></a>
             </div>
-        </footer>
+        </div>
+    </footer>
 
-    </div>
+    <!-- #-------------------------------# -->
+    <!-- #- SCRIPTS                     -# -->
+    <!-- #-------------------------------# -->
+
+
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <script type="text/javascript" src="scripts/scrollscript.js"></script>
+    <script type="text/javascript" src="scripts/barres.js"></script>
+    <script type="text/javascript" src="scripts/topscroll.js"></script>
+    <script type="text/javascript" src="scripts/smoothscroll.js"></script>
+    <script type="text/javascript" src="scripts/cardeffect.js" class="cardeffect"></script>
+    <script type="text/javascript" src="scripts/onglets.js"></script>
+    <script type="text/javascript" src="scripts/arroweffect.js"></script>
 
 </body>
 
