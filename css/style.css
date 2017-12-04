@@ -1429,24 +1429,6 @@ footer p a {
         overflow: hidden;
     }
     
-/*
-    .progress-bar1 {
-        width: 75%;
-    }
-    
-    .progress-bar1c {
-        width: 25%
-    }
-    
-    .progress-text1 p:nth-child(2) {
-        padding-right: 8%;
-    }
-    
-    .bar1b {
-        width: 60%;
-    }
-*/
-    
     /* #- 3.2.5 FORMATION            -# */
     .formation {
         width: 80%;
@@ -1597,7 +1579,6 @@ footer p a {
     }
 
     .devUnQuart {
-        /*        padding-bottom: 10px;*/
         height: 100%;
         padding: 0;
         margin: 0;
@@ -1621,6 +1602,9 @@ footer p a {
         padding-bottom: 10px;
     }
 
+    #contenu_onglet_chauffeur {
+        height: auto;
+    }
 
 
 
