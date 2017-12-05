@@ -1346,6 +1346,14 @@ footer p a {
         display: none;
     }
 
+    .imgHeader h1 {
+        font-size: 8vh;
+    }
+    
+    .imgHeader p {
+        font-size: 5vh;
+    }
+    
     .menu {
         display: none;
         width: 100%;
