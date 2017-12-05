@@ -1340,7 +1340,7 @@ footer p a {
 /* #-------------------------------# */
 
 @media only screen and (max-width: 1000px) {
-
+    
     /* #-  3.2.1 MENU / NAVIGATION    -# */
     header {
         display: none;
@@ -1563,6 +1563,10 @@ footer p a {
 
     .autre li {
         padding-top: 20px;
+    }
+    
+    .autre ul {
+        margin: 0;
     }
 
     .devUn {
