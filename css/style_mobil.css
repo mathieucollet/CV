@@ -1989,20 +1989,20 @@ Main Components
             float: left;
         }
         .cd-nav .cd-primary-nav {
-            margin-top: 150px;
+            margin-top: 70px;
         }
         .cd-nav h2 {
             font-size: 1.5rem;
             margin-bottom: 5.6em;
         }
         .cd-nav .cd-primary-nav li {
-            margin: 2em 0;
+            margin: 1.5em 0;
         }
         .cd-nav .cd-primary-nav a {
             font-size: 2rem;
         }
         .cd-nav .cd-contact-info {
-            margin-top: 95px;
+            margin-top: 75px;
             text-align: right;
         }
         .cd-nav .cd-contact-info li {
