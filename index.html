@@ -13,8 +13,10 @@
   || navigator.userAgent.match(/BlackBerry/i)
   || navigator.userAgent.match(/Windows Phone/i)) {
     document.write('<meta name="viewport" content="width=device-width, initial-scale=0.6, user-scalable=no" />');
+    document.write('<link rel="stylesheet" href="css/style_mobil.css">')
 } else {
-    document.write('<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />')
+    document.write('<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />');
+    document.write('<link rel="stylesheet" href="css/style.css">');
 }
     </script>
     
@@ -43,7 +45,6 @@
     <!-- #-------------------------------# -->
 
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
     <script src="js/modernizr.js"></script>
 
     <!-- #-------------------------------# -->
