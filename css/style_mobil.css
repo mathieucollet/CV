@@ -1955,7 +1955,7 @@ Main Components
         color: #ffffff;
     }
     .cd-nav .cd-contact-info {
-        margin-top: 200px;
+        margin-top: 375px;
     }
     .cd-nav .cd-contact-info li {
         font-family: "Merriweather", serif;
@@ -1976,7 +1976,8 @@ Main Components
     }
     
     .cd-contact-info .rezos {
-            display: none;
+            padding: 0;
+            margin: 0;
         }
     
     @media only screen and (min-width: 840px) {
