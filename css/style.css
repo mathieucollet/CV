@@ -1349,9 +1349,10 @@ footer p a {
 
 /* #-------------------------------# */
 
-@media only screen and (max-width: 1000px) {
-
+@media only screen and (max-width: 1060px) {
+    
     /* #-  3.2.1 MENU / NAVIGATION    -# */
+
     header {
         display: none;
     }
@@ -1366,7 +1367,6 @@ footer p a {
 
     .menu {
         display: none;
-        width: 100%;
     }
 
     main.fixed {

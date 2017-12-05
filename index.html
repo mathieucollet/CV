@@ -4,7 +4,18 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.6, shrink-to-fit=no">
+    <script language="javascript">
+        if(navigator.userAgent.match(/Android/i)
+  || navigator.userAgent.match(/webOS/i)
+  || navigator.userAgent.match(/iPhone/i)
+  || navigator.userAgent.match(/iPad/i)
+  || navigator.userAgent.match(/iPod/i)
+  || navigator.userAgent.match(/BlackBerry/i)
+  || navigator.userAgent.match(/Windows Phone/i)) {
+    document.write('<meta name="viewport" content="width=device-width, initial-scale=0.6, user-scalable=no" />');
+}
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>CV de Mathieu Collet</title>
     <meta name="description" content="Curriculum Vitae de Mathieu Collet." />
