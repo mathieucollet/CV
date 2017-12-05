@@ -1975,6 +1975,10 @@ Main Components
         font-size: 1.6rem;
     }
     
+    .cd-contact-info .rezos {
+            display: none;
+        }
+    
     @media only screen and (min-width: 840px) {
         .cd-nav .cd-navigation-wrapper {
             padding: 40px 20% 62px 20%;
@@ -1982,6 +1986,7 @@ Main Components
         }
         
         .cd-contact-info .rezos {
+            display: block;
             padding: 0;
             margin: 0;
         }
