@@ -76,6 +76,7 @@ body {
 .menuBouton {
     display: none;
 }
+
 /* #-------------------------------# */
 
 /* #- 1.0 HEADER                  -# */
@@ -1350,9 +1351,8 @@ footer p a {
 /* #-------------------------------# */
 
 @media only screen and (max-width: 2000px) {
-    
-    /* #-  3.2.1 MENU / NAVIGATION    -# */
 
+    /* #-  3.2.1 MENU / NAVIGATION    -# */
     header {
         display: none;
     }
@@ -1654,7 +1654,7 @@ Primary style
     nav {
         box-shadow: none;
     }
-    
+
     .menuBouton {
         display: block;
     }
@@ -1680,7 +1680,7 @@ Main Components
         -moz-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
         transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
     }
-    
+
     main {
         position: relative;
         z-index: 2;
@@ -1707,7 +1707,7 @@ Main Components
         -o-transform: translateX(100%);
         transform: translateX(100%);
     }
-    
+
     .navigation-is-open .imgHeader {
         -webkit-transform: translateX(100%);
         -moz-transform: translateX(100%);
@@ -1852,11 +1852,6 @@ Main Components
         -moz-transition: stroke-dashoffset 0.4s 0.3s;
         transition: stroke-dashoffset 0.4s 0.3s;
     }
-    @media only screen and (min-width: 1170px) {
-        .cd-nav-trigger {
-            top: 40px;
-        }
-    }
 
     .cd-nav {
         position: fixed;
@@ -1979,23 +1974,64 @@ Main Components
     .cd-nav .cd-contact-info span {
         font-size: 1.6rem;
     }
+    @media only screen and (min-width: 600px) {
+        .cd-nav .cd-navigation-wrapper {
+            padding: 40px 20% 62px 20%;
+            flex-direction: row;
+        }
+        .cd-nav .cd-navigation-wrapper::after {
+            clear: both;
+            content: "";
+            display: table;
+        }
+        .cd-nav .cd-half-block {
+            width: 50%;
+            float: left;
+        }
+        .cd-nav .cd-primary-nav {
+            margin-top: 150px;
+        }
+        .cd-nav h2 {
+            font-size: 1.5rem;
+            margin-bottom: 5.6em;
+        }
+        .cd-nav .cd-primary-nav li {
+            margin: 2em 0;
+        }
+        .cd-nav .cd-primary-nav a {
+            font-size: 2rem;
+        }
+        .cd-nav .cd-contact-info {
+            margin-top: 95px;
+            text-align: right;
+        }
+        .cd-nav .cd-contact-info li {
+            margin-bottom: 1.5em;
+        }
+        .cd-nav .cd-contact-info li,
+        .cd-nav .cd-contact-info a,
+        .cd-nav .cd-contact-info span {
+            font-size: 1.5rem;
+        }
 
-    .no-js main, {
-        height: auto;
-        overflow: visible;
-    }
 
-    .no-js .cd-nav {
-        position: static;
-        visibility: visible;
-    }
-    .no-js .cd-nav .cd-navigation-wrapper {
-        height: auto;
-        overflow: visible;
-        padding: 100px 5%;
-        -webkit-transform: translateX(0);
-        -moz-transform: translateX(0);
-        -ms-transform: translateX(0);
-        -o-transform: translateX(0);
-        transform: translateX(0);
-    }
+        .no-js main,
+            {
+            height: auto;
+            overflow: visible;
+        }
+
+        .no-js .cd-nav {
+            position: static;
+            visibility: visible;
+        }
+        .no-js .cd-nav .cd-navigation-wrapper {
+            height: auto;
+            overflow: visible;
+            padding: 100px 5%;
+            -webkit-transform: translateX(0);
+            -moz-transform: translateX(0);
+            -ms-transform: translateX(0);
+            -o-transform: translateX(0);
+            transform: translateX(0);
+        }
