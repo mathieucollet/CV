@@ -1974,11 +1974,22 @@ Main Components
     .cd-nav .cd-contact-info span {
         font-size: 1.6rem;
     }
+    
     @media only screen and (min-width: 840px) {
         .cd-nav .cd-navigation-wrapper {
             padding: 40px 20% 62px 20%;
             flex-direction: row;
         }
+        
+        .cd-contact-info .rezos {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .cd-contact-info .rezos a:nth-child(-n + 2) {
+    padding-right: 5px;
+}
+        
         .cd-nav .cd-navigation-wrapper::after {
             clear: both;
             content: "";
@@ -1989,7 +2000,7 @@ Main Components
             float: left;
         }
         .cd-nav .cd-primary-nav {
-            margin-top: 70px;
+            margin-top: 60px;
         }
         .cd-nav h2 {
             font-size: 1.5rem;
@@ -2002,11 +2013,11 @@ Main Components
             font-size: 2rem;
         }
         .cd-nav .cd-contact-info {
-            margin-top: 75px;
+            margin-top: 70px;
             text-align: right;
         }
         .cd-nav .cd-contact-info li {
-            margin-bottom: 1.5em;
+            margin-bottom: 1.8em;
         }
         .cd-nav .cd-contact-info li,
         .cd-nav .cd-contact-info a,
