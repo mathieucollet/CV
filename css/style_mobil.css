@@ -1974,7 +1974,7 @@ Main Components
     .cd-nav .cd-contact-info span {
         font-size: 1.6rem;
     }
-    @media only screen and (max-height: 833px) {
+    @media only screen and (min-width: 840px) {
         .cd-nav .cd-navigation-wrapper {
             padding: 40px 20% 62px 20%;
             flex-direction: row;
