@@ -1390,8 +1390,9 @@ footer p a {
     }
 
     .photoContainer {
-        width: 90%;
+        width: 50%;
         border-radius: 10px;
+        padding-bottom: 40px;
     }
 
     .apropos .photoContainer img {
@@ -1616,6 +1617,14 @@ footer p a {
 
     #contenu_onglet_chauffeur {
         height: auto;
+    }
+    
+    .devDeux p:nth-child(4) {
+        margin-bottom: 20px;
+    }
+    
+    .tab2 {
+        margin-bottom: 10px;
     }
 
 
