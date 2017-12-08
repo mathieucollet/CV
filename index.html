@@ -43,22 +43,23 @@
     <!-- #- Polices                     -# -->
     <!-- #-------------------------------# -->
 
-    <link href="https://fonts.googleapis.com/css?family=Quicksand|Hammersmith+One|Oswald:400,700|Open+Sans:400,800,700|Merriweather:400,700" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css?family=Rubik|Quicksand|Hammersmith+One|Oswald:400,700|Open+Sans:400,800,700|Merriweather:400,700" rel="stylesheet">
+
     <script language="javascript">
-        if(navigator.userAgent.match(/Android/i)
-  || navigator.userAgent.match(/webOS/i)
-  || navigator.userAgent.match(/iPhone/i)
-  || navigator.userAgent.match(/iPad/i)
-  || navigator.userAgent.match(/iPod/i)
-  || navigator.userAgent.match(/BlackBerry/i)
-  || navigator.userAgent.match(/Windows Phone/i)) {
-    document.write('<meta name="viewport" content="width=device-width, initial-scale=0.6, user-scalable=no" />');
-    document.write('<link rel="stylesheet" href="css/style_mobil.css">')
-} else {
-    document.write('<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />');
-    document.write('<link rel="stylesheet" href="css/style.css">');
-}
+        if (navigator.userAgent.match(/Android/i) ||
+            navigator.userAgent.match(/webOS/i) ||
+            navigator.userAgent.match(/iPhone/i) ||
+            navigator.userAgent.match(/iPad/i) ||
+            navigator.userAgent.match(/iPod/i) ||
+            navigator.userAgent.match(/BlackBerry/i) ||
+            navigator.userAgent.match(/Windows Phone/i)) {
+            document.write('<meta name="viewport" content="width=device-width, initial-scale=0.6, user-scalable=no" />');
+            document.write('<link rel="stylesheet" href="css/style_mobil.css">')
+        } else {
+            document.write('<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />');
+            document.write('<link rel="stylesheet" href="css/style.css">');
+        }
+
     </script>
 </head>
 
@@ -130,7 +131,6 @@
                     <h1>Mon histoire</h1>
                 </div>
             </div>
-            <img src="img/photo.png" alt="Photographie" class="photo">
             <div class="apropos">
 
                 <!-- #-------------------------------# -->
@@ -169,7 +169,6 @@
                     <h1>Compétences</h1>
                 </div>
             </div>
-            <img src="img/dev.png" alt="Developpeur" class="imgDev">
             <div class="comp">
 
                 <!-- #-------------------------------# -->
@@ -326,7 +325,6 @@
                     <div class="imgMds">
                         <a href="http://www.mydigitalschool.com/" title="www.mydigitalschool.com" target="_blank"><img src="img/mds2.png" alt="My Digital School"></a>
                     </div>
-                    <img src="img/etudes.png" alt="Etudes" class="etudes">
                     <div class="textMds">
                         <h2>Bachelor Developpeur Digital<br>2017 - 2020 | Première année | Rennes</h2>
                         <p class="part2">Le Bachelor Développeur digital est une formation en 3 ans qui permet de faire l’acquisition de la méthodologie de travail et de gestion d’un projet web ou mobile de sa conception, en passant par sa programmation et son développement.</p>
@@ -359,11 +357,10 @@
                     <h1>Expériences</h1>
                 </div>
             </div>
-            <img src="img/exp.png" alt="Expériences" class="experiences">
             <div class="exp">
                 <div class="systeme_onglets">
                     <div class="onglets">
-                        <span class="onglet onglet_0" id="onglet_developpeur" onclick="javascript:change_onglet('developpeur');"></span>
+                        <span class="onglet_0 onglet" id="onglet_developpeur" onclick="javascript:change_onglet('developpeur');"></span>
                         <span class="onglet_0 onglet" id="onglet_chauffeur" onclick="javascript:change_onglet('chauffeur');" style="background-color: #ececec"></span>
                         <span class="onglet_0 onglet" id="onglet_autres" onclick="javascript:change_onglet('autres');" style="background-color: #ececec"></span>
                     </div>
@@ -388,14 +385,14 @@
                         <div class="contenu_onglet" id="contenu_onglet_chauffeur">
                             <div class="dev">
                                 <div class="devUn">
-                                    <div class="devUnQuart">
+                                    <div class="devUnQuart quartUn">
                                         <h2>Transports Celsius | 2009 - 2016</h2>
                                         <p>Société de transports de produits surgelés.</p>
                                         <p class="part2">Chauffeur poids lourd régional, transport de lots. <br>Formateur au près des nouveaux salariés.</p>
                                     </div>
                                     <div class="sep2"></div>
                                     <div class="sep3"></div>
-                                    <div class="devUnQuart">
+                                    <div class="devUnQuart quartDeux">
                                         <h2>Transports Corre | 2 mois en 2009</h2>
                                         <p>Société de transports frigorifique.</p>
                                         <p class="part2">Chauffeur poids lourd régional, transport de lots.</p>
@@ -404,14 +401,14 @@
                                 <div class="sep"></div>
                                 <div class="devDeux">
                                     <div class="sep3"></div>
-                                    <div class="devUnQuart">
+                                    <div class="devUnQuart quartTrois">
                                         <h2>Routiers Bretons | 4 mois en 2008</h2>
                                         <p>Société de transports générique.</p>
                                         <p class="part2">Chauffeur poids lourd régional, transport de lots et de messagerie.</p>
                                     </div>
                                     <div class="sep2"></div>
                                     <div class="sep3"></div>
-                                    <div class="devUnQuart">
+                                    <div class="devUnQuart quartQuatre">
                                         <h2>Mory Team | 2007 - 2008</h2>
                                         <p>Société de transports générique, financeur de mon titre professionel.</p>
                                         <p class="part2 tab2">Chauffeur poids lourd local, livraisons de messageries.</p>
@@ -452,11 +449,40 @@
                 <p>Tél : 06 32 48 24 08</p>
                 <p>Email : <a href="mailto:coco@mds.org">mayeut@gmail.com</a></p>
             </div>
-            <div class="rezos" id="contact2">
+            <div class="rezos">
+                <div class="svg-wrapper">
+                    <svg height="50" width="50" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="shape" height="50" width="50" stroke="red" stroke-width="4px"/>
+                </svg>
+                    <div class="text">
+                        <a href="https://www.linkedin.com/in/mathieu-collet-80a799151/" title="www.linkedin.com"><img src="img/linkedin.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+
+                <div class="svg-wrapper2">
+                    <svg height="50" width="50" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="shape2" height="50" width="50" stroke="red" stroke-width="4px"/>
+                </svg>
+                    <div class="text2">
+                        <a href="https://twitter.com/mayeut35" title="twitter.com"><img src="img/twitter.png" alt="Twitter"></a>
+                    </div>
+                </div>
+
+                <div class="svg-wrapper3">
+                    <svg height="50" width="50" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="shape3" height="50" width="50" stroke="red" stroke-width="4px"/>
+                </svg>
+                    <div class="text3">
+                        <a href="https://www.facebook.com/mathieu.collet.58" title="www.facebook.com"><img src="img/facebook.png" alt="Facebook"></a>
+                    </div>
+                </div>
+            </div>
+            <!--
                 <a href="https://www.linkedin.com/in/mathieu-collet-80a799151/" title="www.linkedin.com"><img src="img/linkedin.png" alt="LinkedIn"></a>
                 <a href="https://twitter.com/mayeut35" title="twitter.com"><img src="img/twitter.png" alt="Twitter"></a>
                 <a href="https://www.facebook.com/mathieu.collet.58" title="www.facebook.com"><img src="img/facebook.png" alt="Facebook"></a>
-            </div>
+-->
+
         </div>
     </footer>
     <div class="menuBouton">
@@ -495,11 +521,11 @@
 							<span>35150 - Janzé</span>
 						</li>
 						<li>
-						    <div class="rezos" id="contact2">
-                <a href="https://www.linkedin.com/in/mathieu-collet-80a799151/" title="www.linkedin.com"><img src="img/linkedin.png" alt="LinkedIn"></a>
-                <a href="https://twitter.com/mayeut35" title="twitter.com"><img src="img/twitter.png" alt="Twitter"></a>
-                <a href="https://www.facebook.com/mathieu.collet.58" title="www.facebook.com"><img src="img/facebook.png" alt="Facebook"></a>
-            </div>
+						    <div class="rezos2" id="contact2">             
+                                <a href="https://www.linkedin.com/in/mathieu-collet-80a799151/" title="www.linkedin.com"><img src="img/linkedin.png" alt="LinkedIn"></a>
+                                <a href="https://twitter.com/mayeut35" title="twitter.com"><img src="img/twitter.png" alt="Twitter"></a>
+                                <a href="https://www.facebook.com/mathieu.collet.58" title="www.facebook.com"><img src="img/facebook.png" alt="Facebook"></a>
+                            </div>
 						</li>
 					</ul>
 				</address>
@@ -509,6 +535,8 @@
             <!-- .cd-navigation-wrapper -->
         </div>
     </div>
+
+
     <!-- #-------------------------------# -->
     <!-- #- SCRIPTS                     -# -->
     <!-- #-------------------------------# -->
@@ -526,6 +554,7 @@
     <script type="text/javascript" src="scripts/jquery-2.1.1.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
     <script type="text/javascript" src="scripts/onclick.js"></script>
+    <script type="text/javascript" src="scripts/hoveronglets.js"></script>
 
 </body>
 

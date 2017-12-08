@@ -1,7 +1,7 @@
 /* 
 Site Creator : Mathieu Collet
 Description : Site vitrine perso
-Version : 1.0
+Version : 1.2
 URL : https://mathieucollet.github.io
 Colors :
     * Gris : #808080
@@ -11,7 +11,7 @@ Colors :
     * Vert : #55b46e
 Fonts :
     * titre : font-family: 'Oswald', sans-serif;
-    * global : font-family: 'Hammersmith One', sans-serif;
+    * global : font-family: 'Rubik', sans-serif;
 */
 
 /* Table of contents
@@ -41,17 +41,19 @@ Fonts :
 *   2.4.2 Old Formations
 *   2.5 Expériences
 *   2.5.1 -> Onglets
-*   2.6 Images Déco
-*   2.7 Footer
+*   2.5.2 -> Contenus
+*   2.6 Footer
 * 3 - Media Queries
-*   3.1 1650px
-*   3.2 1000px
-*   3.2.1 Menu / Navigation
-*   3.2.2 Top Card Title
-*   3.2.3 A Propos
-*   3.2.4 Compétences
-*   3.2.5 Formation
-*   3.2.6 Expériences
+*   3.1 1060px
+*   3.1.1 Menu / Navigation
+*   3.1.2 Top Card Title
+*   3.1.3 A Propos
+*   3.1.4 Compétences
+*   3.1.5 Formation
+*   3.1.6 Expériences
+* 4 - Menu mobile
+*   4.0.1 Global
+*   4.0.2 Content
 
 -------------------------------------------------------------------------- */
 
@@ -63,6 +65,11 @@ Fonts :
 
 /* #- 0.1 FONTS                   -# */
 
+/*
+* titre : font-family: 'Oswald', sans-serif;
+* global : font-family: 'Rubik', sans-serif;
+*/
+
 /* #- 0.2 GLOBALS                 -# */
 
 html,
@@ -70,12 +77,15 @@ body {
     height: 100%;
     width: 100%;
     margin: 0;
-    font-family: 'Hammersmith One', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    line-height: 140%;
+    font-size: 1.02em;
 }
 
 .menuBouton {
     display: none;
 }
+
 /* #-------------------------------# */
 
 /* #- 1.0 HEADER                  -# */
@@ -121,7 +131,7 @@ body {
 }
 
 .imgHeader p {
-    padding-top: 2%;
+    padding-top: 3%;
     color: white;
     font-size: 5.5vh;
     font-family: 'Quicksand', sans-serif;
@@ -129,7 +139,7 @@ body {
 
 .arrows {
     position: absolute;
-    bottom: 100px;
+    bottom: 10%;
 }
 
 .arrows a {
@@ -358,10 +368,18 @@ main {
 /* #- 2.2.1 A PROPOS IMG          -# */
 
 .apropos img {
-    width: 300px;
-    height: 300px;
+    width: 90%;
     border-radius: 10px;
     z-index: 2;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.photoContainer {
+    margin-top: 10px;
+    width: 40%;
+    height: 100%;
 }
 
 /* #- 2.2.2 A PROPOS TEXT         -# */
@@ -1044,20 +1062,28 @@ main {
     cursor: pointer;
 }
 
+#onglet_chauffeur {
+    margin: 10px 0 10px 0;
+}
+
 .onglet_0 {
     width: 100%;
     height: 100px;
-    /*    background: #ececec;*/
-    border-bottom: 1px solid #ececec;
+    box-shadow: ;
+    background-color: rgba(236, 236, 236, 0.3);
+    border-bottom: none;
+    border-radius: 10px 0 0 10px;
+    z-index: 1;
 }
 
 .onglet_1 {
     -webkit-box-shadow: 6px 0 0px white, 0px 2px 5px grey;
     box-shadow: 6px 0 0px white, 0px 2px 5px grey;
+    border-radius: 10px 0 0 10px;
     width: 100%;
     height: 100px;
     z-index: 2;
-    background: white;
+    background-color: white;
 }
 
 #onglet_developpeur {
@@ -1067,7 +1093,6 @@ main {
     width: 91%;
     padding: 5px;
     background-origin: content-box;
-    /*    z-index: 2;*/
 }
 
 #onglet_chauffeur {
@@ -1090,13 +1115,15 @@ main {
     background-origin: content-box;
 }
 
-.grey {
+.onglet_0#onglet_developpeur {
     background-color: #ececec;
 }
 
-.white {
-    background-color: white;
+.onglet:nth-child(3) {
+    background-color: red;
 }
+
+/* #- 2.5.2 CONTENUS                   -# */
 
 .contenu_onglets {
     width: 87%;
@@ -1225,43 +1252,25 @@ main {
     background: white;
 }
 
-/* #-------------------------------# */
-
-/* #- 2.6 IMAGES DECO              -# */
-
-/* #-------------------------------# */
-
-.photo,
-.imgDev,
-.etudes,
-.experiences {
-    position: absolute;
-    z-index: 1;
+.quartUn {
+    height: 57%;
 }
 
-.photo {
-    top: 8%;
-    left: 5%;
+.quartDeux {
+    height: 40%;
 }
 
-.imgDev {
-    top: 20%;
-    right: 2%;
+.quartTrois {
+    height: 45%;
 }
 
-.etudes {
-    top: 30%;
-    left: 2%;
-}
-
-.experiences {
-    top: 40%;
-    right: 2%;
+.quartQuatre {
+    height: 45%;
 }
 
 /* #-------------------------------# */
 
-/* #- 2.7 FOOTER                  -# */
+/* #- 2.6 FOOTER                  -# */
 
 /* #-------------------------------# */
 
@@ -1301,6 +1310,10 @@ footer {
 .contact {
     line-height: 18px;
     color: white;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .contact p:nth-last-child(-n + 2) {
@@ -1313,12 +1326,67 @@ footer p a {
 }
 
 .rezos {
-    padding-top: 30px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
-.rezos a:nth-child(-n + 2) {
-    padding-right: 50px;
+.svg-wrapper, .svg-wrapper2, .svg-wrapper3 {
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 50px;
+    margin-top: 10px;
 }
+
+.shape, .shape2, .shape3 {
+    fill: transparent;
+    stroke-width: 2px;
+    stroke: white;
+    stroke-dasharray: 265;
+    stroke-dashoffset: 265;
+}
+
+.text, .text2, .text3 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@-webkit-keyframes draw {
+    0% {
+/*        stroke-dasharray: 0 265;*/
+        stroke-dashoffset: 265;
+    }
+    100% {
+/*        stroke-dasharray: 265;*/
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes draw {
+    0% {
+/*        stroke-dasharray: 0 265;*/
+        stroke-dashoffset: 265;
+    }
+    100% {
+/*        stroke-dasharray: 265;*/
+        stroke-dashoffset: 0;
+    }
+}
+
+.svg-wrapper:hover .shape, .svg-wrapper2:hover .shape2, .svg-wrapper3:hover .shape3 {
+    -webkit-animation: draw 0.7s linear forwards;
+    animation: draw 0.7s linear forwards;
+}
+
+
 
 /* #-------------------------------# */
 
@@ -1328,31 +1396,13 @@ footer p a {
 
 /* #-------------------------------# */
 
-/* #- 3.1 1650px                  -# */
-
-/* #-------------------------------# */
-
-@media only screen and (max-width: 1650px) {
-
-    .photo,
-    .imgDev,
-    .etudes,
-    .experiences {
-        display: none;
-    }
-
-}
-
-/* #-------------------------------# */
-
-/* #- 3.2 1000px                  -# */
+/* #- 3.1 1000px                  -# */
 
 /* #-------------------------------# */
 
 @media only screen and (max-width: 1060px) {
-    
-    /* #-  3.2.1 MENU / NAVIGATION    -# */
 
+    /* #-  3.2.1 MENU / NAVIGATION    -# */
     header {
         display: none;
     }
@@ -1501,6 +1551,16 @@ footer p a {
         height 50px;
         width: auto;
         z-index: 1;
+        border-radius: 10px 10px 0 0;
+
+    }
+
+    .onglet_1 {
+        border-radius: 10px 10px 0 0;
+    }
+
+    #onglet_chauffeur {
+        margin: 0 10px 0 10px;
     }
 
     #onglet_developpeur {
@@ -1641,11 +1701,7 @@ footer p a {
     /* #-------------------------------# */
     /* #- 4.0 MENU MOBILE             -# */
     /* #-------------------------------# */
-    /* -------------------------------- 
-
-Primary style
-
--------------------------------- */
+    /* #- 4.0.1 GLOBAL                -# */
     a {
         color: #9cb3a8;
         text-decoration: none;
@@ -1654,15 +1710,12 @@ Primary style
     nav {
         box-shadow: none;
     }
-    
+
     .menuBouton {
         display: block;
     }
-    /* -------------------------------- 
 
-Main Components 
-
--------------------------------- */
+    /* #- 4.0.2 CONTENT               -# */
     .imgHeader {
         position: relative;
         z-index: 2;
@@ -1681,7 +1734,7 @@ Main Components
         -moz-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
         transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
     }
-    
+
     main {
         position: relative;
         z-index: 2;
@@ -1708,7 +1761,7 @@ Main Components
         -o-transform: translateX(100%);
         transform: translateX(100%);
     }
-    
+
     .navigation-is-open .imgHeader {
         -webkit-transform: translateX(100%);
         -moz-transform: translateX(100%);
@@ -1717,6 +1770,12 @@ Main Components
         transform: translateX(100%);
     }
 
+    #contact2 {
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
     .cd-nav-trigger {
         position: fixed;
         z-index: 3;
@@ -1734,6 +1793,7 @@ Main Components
         -moz-transition: -moz-transform 0.5s;
         transition: transform 0.5s;
     }
+
     .cd-nav-trigger .cd-nav-icon {
         /* icon created in CSS */
         position: absolute;
@@ -1750,6 +1810,7 @@ Main Components
         height: 2px;
         background-color: #ffffff;
     }
+
     .cd-nav-trigger .cd-nav-icon::before,
     .cd-nav-trigger .cd-nav-icon:after {
         /* upper and lower lines of the menu icon */
@@ -1772,6 +1833,7 @@ Main Components
         -moz-transition: -moz-transform 0.5s, width 0.5s, top 0.3s;
         transition: transform 0.5s, width 0.5s, top 0.3s;
     }
+
     .cd-nav-trigger .cd-nav-icon::before {
         -webkit-transform-origin: right top;
         -moz-transform-origin: right top;
@@ -1784,6 +1846,7 @@ Main Components
         -o-transform: translateY(-6px);
         transform: translateY(-6px);
     }
+
     .cd-nav-trigger .cd-nav-icon::after {
         -webkit-transform-origin: right bottom;
         -moz-transform-origin: right bottom;
@@ -1796,23 +1859,28 @@ Main Components
         -o-transform: translateY(6px);
         transform: translateY(6px);
     }
+
     .no-touch .cd-nav-trigger:hover .cd-nav-icon::after {
         top: 2px;
     }
+
     .no-touch .cd-nav-trigger:hover .cd-nav-icon::before {
         top: -2px;
     }
+
     .cd-nav-trigger svg {
         position: absolute;
         top: 0;
         left: 0;
     }
+
     .cd-nav-trigger circle {
         /* circle border animation */
         -webkit-transition: stroke-dashoffset 0.4s 0s;
         -moz-transition: stroke-dashoffset 0.4s 0s;
         transition: stroke-dashoffset 0.4s 0s;
     }
+
     .navigation-is-open .cd-nav-trigger {
         /* rotate trigger when navigation becomes visible */
         -webkit-transform: rotate(180deg);
@@ -1821,6 +1889,7 @@ Main Components
         -o-transform: rotate(180deg);
         transform: rotate(180deg);
     }
+
     .navigation-is-open .cd-nav-trigger .cd-nav-icon::after,
     .navigation-is-open .cd-nav-trigger .cd-nav-icon::before {
         /* animate arrow --> from hamburger to arrow */
@@ -1829,6 +1898,7 @@ Main Components
         -moz-transition: -moz-transform 0.5s, width 0.5s;
         transition: transform 0.5s, width 0.5s;
     }
+
     .navigation-is-open .cd-nav-trigger .cd-nav-icon::before {
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
@@ -1836,6 +1906,7 @@ Main Components
         -o-transform: rotate(45deg);
         transform: rotate(45deg);
     }
+
     .navigation-is-open .cd-nav-trigger .cd-nav-icon::after {
         -webkit-transform: rotate(-45deg);
         -moz-transform: rotate(-45deg);
@@ -1843,16 +1914,19 @@ Main Components
         -o-transform: rotate(-45deg);
         transform: rotate(-45deg);
     }
+
     .no-touch .navigation-is-open .cd-nav-trigger:hover .cd-nav-icon::after,
     .no-touch .navigation-is-open .cd-nav-trigger:hover .cd-nav-icon::before {
         top: 0;
     }
+
     .navigation-is-open .cd-nav-trigger circle {
         stroke-dashoffset: 0;
         -webkit-transition: stroke-dashoffset 0.4s 0.3s;
         -moz-transition: stroke-dashoffset 0.4s 0.3s;
         transition: stroke-dashoffset 0.4s 0.3s;
     }
+
     @media only screen and (min-width: 1170px) {
         .cd-nav-trigger {
             top: 40px;
@@ -1872,9 +1946,12 @@ Main Components
         -moz-transition: visibility 0s 0.7s;
         transition: visibility 0s 0.7s;
     }
+
     .cd-nav .cd-navigation-wrapper {
         /* all navigation content */
         height: 800px;
+        display: flex;
+        flex-direction: column;
         /*    justify-content: space-between;*/
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
@@ -1899,12 +1976,14 @@ Main Components
         -moz-transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
         transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
     }
+
     .navigation-is-open .cd-nav {
         visibility: visible;
         -webkit-transition: visibility 0s 0s;
         -moz-transition: visibility 0s 0s;
         transition: visibility 0s 0s;
     }
+
     .navigation-is-open .cd-nav .cd-navigation-wrapper {
         -webkit-transform: translateX(0);
         -moz-transform: translateX(0);
@@ -1918,6 +1997,7 @@ Main Components
         -moz-transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
         transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
     }
+
     .cd-nav h2 {
         position: relative;
         margin-bottom: 1.7em;
@@ -1926,6 +2006,7 @@ Main Components
         color: #080b0f;
         text-transform: uppercase;
     }
+
     .cd-nav h2::after {
         /* bottom separation line */
         content: '';
@@ -1938,48 +2019,64 @@ Main Components
     }
 
     .cd-half-block {
-        height: 100%;
+        height: 50%;
     }
+
     .cd-nav .cd-primary-nav {
-        margin-top: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
+
     .cd-nav .cd-primary-nav li {
-        margin: 1.6em 0;
+        margin-bottom: 20px;
     }
+
     .cd-nav .cd-primary-nav a {
         font-family: "Merriweather", serif;
-        font-size: 2.4rem;
+        font-size: 2rem;
         color: rgba(255, 255, 255, 0.3);
         display: inline-block;
     }
+
     .cd-nav .cd-primary-nav a.selected {
         color: #ffffff;
     }
+
     .no-touch .cd-nav .cd-primary-nav a:hover {
         color: #ffffff;
     }
+
     .cd-nav .cd-contact-info {
-        margin-top: 200px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
     }
+
     .cd-nav .cd-contact-info li {
         font-family: "Merriweather", serif;
-        margin-bottom: 1.5em;
-        line-height: 1.2;
+        margin-bottom: 1em;
+        line-height: 1;
         color: rgba(255, 255, 255, 0.3);
     }
+
     .cd-nav .cd-contact-info a {
         color: #ffffff;
     }
+
     .cd-nav .cd-contact-info span {
         display: block;
     }
+
     .cd-nav .cd-contact-info li,
     .cd-nav .cd-contact-info a,
     .cd-nav .cd-contact-info span {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
-    .no-js main, {
+    .no-js main,
+        {
         height: auto;
         overflow: visible;
     }
@@ -1988,6 +2085,7 @@ Main Components
         position: static;
         visibility: visible;
     }
+
     .no-js .cd-nav .cd-navigation-wrapper {
         height: auto;
         overflow: visible;
@@ -1998,4 +2096,5 @@ Main Components
         -o-transform: translateX(0);
         transform: translateX(0);
     }
+
 }
