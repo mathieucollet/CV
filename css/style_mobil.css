@@ -118,6 +118,11 @@ body {
     align-items: center;
 }
 
+#title1, #title2 {
+    position: absolute;
+    width: 100%;
+}
+
 .imgHeader h1 {
     color: white;
     font-size: 9vh;

@@ -124,6 +124,11 @@ body {
     align-items: center;
 }
 
+#title1, #title2 {
+    position: absolute;
+    width: 100%;
+}
+
 .imgHeader h1 {
     color: white;
     font-size: 9vh;
@@ -1227,10 +1232,10 @@ main {
 
 .sep {
     height: 75%;
-    width: 1%;
-    -webkit-box-shadow: inset 0 0 4px grey;
-    box-shadow: inset 0 0 4px grey;
+    width: 0.4%;
+    background: #ececec;
     border-radius: 10px;
+    z-index: 2;
 }
 
 .sep2 {

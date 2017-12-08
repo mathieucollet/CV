@@ -27,9 +27,8 @@
     <!-- #-------------------------------# -->
     <!-- #- CSS                         -# -->
     <!-- #-------------------------------# -->
-
     <link rel="stylesheet" href="css/reset.css">
-    <script src="js/modernizr.js"></script>
+<!--    <script src="js/modernizr.js"></script>-->
 
     <!-- #-------------------------------# -->
     <!-- #- Icones                      -# -->
@@ -59,11 +58,12 @@
             document.write('<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />');
             document.write('<link rel="stylesheet" href="css/style.css">');
         }
-
     </script>
+
 </head>
 
 <body id="accueil">
+   
     <!-- #-------------------------------# -->
     <!-- #- HEADER                      -# -->
     <!-- #-------------------------------# -->
@@ -71,11 +71,9 @@
     <!-- #-------------------------------# -->
     <!-- #- IMAGE DU HEADER             -# -->
     <!-- #-------------------------------# -->
-
     <div class="imgHeader">
-        <h1>Mathieu Collet</h1>
-        <div class="trait"></div>
-        <p>Étudiant développeur</p>
+                     <div id="title1"></div>
+                     <div id="title2"></div>
         <div class="arrows">
             <a href="#aPropos" class="fleches">
             <img src="img/arrow2.png" alt="Flèche" class="ar1">
@@ -107,7 +105,7 @@
                     <li><a href="#competences" class="hov2">Compétences</a></li>
                     <li><a href="#formations" class="hov3">Formations</a></li>
                     <li><a href="#experiences" class="hov4">Expériences</a></li>
-                    <li><a href="#contact2" class="hov5">Contact</a></li>
+                    <li><a href="#contact" class="hov5">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -126,7 +124,9 @@
         <!-- #-------------------------------# -->
 
         <section class="sec1">
+
             <div class="top">
+               
                 <div class="topb one">
                     <h1>Mon histoire</h1>
                 </div>
@@ -443,7 +443,7 @@
 
     <footer>
         <div class="foot">
-            <div class="contact">
+            <div class="contact" id="contact">
                 <p>5, rue des Cèdres</p>
                 <p>35150 Janzé</p>
                 <p>Tél : 06 32 48 24 08</p>
@@ -477,14 +477,9 @@
                     </div>
                 </div>
             </div>
-            <!--
-                <a href="https://www.linkedin.com/in/mathieu-collet-80a799151/" title="www.linkedin.com"><img src="img/linkedin.png" alt="LinkedIn"></a>
-                <a href="https://twitter.com/mayeut35" title="twitter.com"><img src="img/twitter.png" alt="Twitter"></a>
-                <a href="https://www.facebook.com/mathieu.collet.58" title="www.facebook.com"><img src="img/facebook.png" alt="Facebook"></a>
--->
-
         </div>
     </footer>
+    
     <div class="menuBouton">
         <a href="#cd-nav" class="cd-nav-trigger">Menu 
 		<span class="cd-nav-icon"></span>
@@ -505,34 +500,31 @@
                             <li><a href="#competences">Compétences</a></li>
                             <li><a href="#formations">Formations</a></li>
                             <li><a href="#experiences">Expériences</a></li>
-                            <li class="contactMobil"><a href="#contact2">Contact</a></li>
+                            <li class="contactMobil"><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
-                <!-- .cd-half-block -->
 
                 <div class="cd-half-block">
                     <address>
-					<ul class="cd-contact-info">
-						<li><a href="mailto:mayeut@gmail.com">mayeut@gmail.com</a></li>
-						<li>06 32 58 24 08</li>
-						<li>
-							<span>5, rue des Cèdres</span>
-							<span>35150 - Janzé</span>
-						</li>
-						<li>
-						    <div class="rezos2" id="contact2">             
-                                <a href="https://www.linkedin.com/in/mathieu-collet-80a799151/" title="www.linkedin.com"><img src="img/linkedin.png" alt="LinkedIn"></a>
-                                <a href="https://twitter.com/mayeut35" title="twitter.com"><img src="img/twitter.png" alt="Twitter"></a>
-                                <a href="https://www.facebook.com/mathieu.collet.58" title="www.facebook.com"><img src="img/facebook.png" alt="Facebook"></a>
-                            </div>
-						</li>
-					</ul>
-				</address>
+                        <ul class="cd-contact-info">
+                            <li><a href="mailto:mayeut@gmail.com">mayeut@gmail.com</a></li>
+                            <li>06 32 58 24 08</li>
+                            <li>
+                                <span>5, rue des Cèdres</span>
+                                <span>35150 - Janzé</span>
+                            </li>
+                            <li>
+                                <div class="rezos2" id="contact2">             
+                                    <a href="https://www.linkedin.com/in/mathieu-collet-80a799151/" title="www.linkedin.com"><img src="img/linkedin.png" alt="LinkedIn"></a>
+                                    <a href="https://twitter.com/mayeut35" title="twitter.com"><img src="img/twitter.png" alt="Twitter"></a>
+                                    <a href="https://www.facebook.com/mathieu.collet.58" title="www.facebook.com"><img src="img/facebook.png" alt="Facebook"></a>
+                                </div>
+                            </li>
+                        </ul>
+				    </address>
                 </div>
-                <!-- .cd-half-block -->
             </div>
-            <!-- .cd-navigation-wrapper -->
         </div>
     </div>
 
@@ -543,7 +535,25 @@
 
 
     <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<!--    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js'></script>-->
+    <script type='text/javascript' src='scripts/jquery.lazylinepainter-1.7.0.min.js'></script>
 
+   <script language="javascript">
+        if (navigator.userAgent.match(/Android/i) ||
+            navigator.userAgent.match(/webOS/i) ||
+            navigator.userAgent.match(/iPhone/i) ||
+            navigator.userAgent.match(/iPad/i) ||
+            navigator.userAgent.match(/iPod/i) ||
+            navigator.userAgent.match(/BlackBerry/i) ||
+            navigator.userAgent.match(/Windows Phone/i)) {
+            document.write('<script type="text/javascript" src="scripts/title2.js"><\/script>');
+        } else {
+            document.write('<script type="text/javascript" src="scripts/title.js"><\/script>');
+        }
+    </script>
+   
+    
     <script type="text/javascript" src="scripts/scrollscript.js"></script>
     <script type="text/javascript" src="scripts/barres.js"></script>
     <script type="text/javascript" src="scripts/topscroll.js"></script>
@@ -551,7 +561,7 @@
     <script type="text/javascript" src="scripts/cardeffect.js" class="cardeffect"></script>
     <script type="text/javascript" src="scripts/onglets.js"></script>
     <script type="text/javascript" src="scripts/arroweffect.js"></script>
-    <script type="text/javascript" src="scripts/jquery-2.1.1.js"></script>
+<!--    <script type="text/javascript" src="scripts/jquery-2.1.1.js"></script>-->
     <script type="text/javascript" src="scripts/main.js"></script>
     <script type="text/javascript" src="scripts/onclick.js"></script>
     <script type="text/javascript" src="scripts/hoveronglets.js"></script>
