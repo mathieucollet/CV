@@ -12,6 +12,7 @@ Colors :
 Fonts :
     * titre : font-family: 'Oswald', sans-serif;
     * global : font-family: 'Rubik', sans-serif;
+    * Xp Dev : font-family: 'Hammersmith One', sans-serif;
 */
 
 /* Table of contents
@@ -124,24 +125,6 @@ body {
     align-items: center;
 }
 
-#title1, #title2 {
-    position: absolute;
-    width: 90%;
-}
-
-.imgHeader h1 {
-    color: white;
-    font-size: 9vh;
-    font-family: 'Quicksand', sans-serif;
-}
-
-.imgHeader p {
-    padding-top: 3%;
-    color: white;
-    font-size: 5.5vh;
-    font-family: 'Quicksand', sans-serif;
-}
-
 .arrows {
     position: absolute;
     bottom: 10%;
@@ -210,6 +193,11 @@ body {
 
 /* #- 1.2 HEADER TEXT             -# */
 
+#title1, #title2 {
+    position: absolute;
+    width: 90%;
+}
+
 /* #- 1.3 HEADER GLOBAL           -# */
 
 .header header {
@@ -232,12 +220,6 @@ main.fixed {
 }
 
 /* #- 1.5 Menu / NAV              -# */
-
-/*
-#cd-nav {
-    display: none;
-}
-*/
 
 nav {
     height: 70px;
@@ -312,7 +294,6 @@ nav ul li a:hover {
     color: #5badd8;
 }
 
-
 /* #-------------------------------# */
 
 /* #- 2.0 MAIN                    -# */
@@ -378,6 +359,8 @@ main {
     z-index: 2;
     padding: 0;
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -490,7 +473,6 @@ main {
     border-radius: 10px;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-
 }
 
 .barres {
@@ -1009,8 +991,6 @@ main {
     color: #2b95bf;
 }
 
-
-
 /* #-------------------------------# */
 
 /* #- 2.5 EXPERIENCES             -# */
@@ -1074,7 +1054,6 @@ main {
 .onglet_0 {
     width: 100%;
     height: 100px;
-    box-shadow: ;
     background-color: rgba(236, 236, 236, 0.3);
     border-bottom: none;
     border-radius: 10px 0 0 10px;
@@ -1316,8 +1295,15 @@ footer {
     line-height: 18px;
     color: white;
     height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -1333,8 +1319,15 @@ footer p a {
 .rezos {
     width: 200px;
     height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
 }
 
@@ -1357,7 +1350,11 @@ footer p a {
 }
 
 .text, .text2, .text3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     position: absolute;
     top: 0;
@@ -1366,22 +1363,18 @@ footer p a {
 
 @-webkit-keyframes draw {
     0% {
-/*        stroke-dasharray: 0 265;*/
         stroke-dashoffset: 265;
     }
     100% {
-/*        stroke-dasharray: 265;*/
         stroke-dashoffset: 0;
     }
 }
 
 @keyframes draw {
     0% {
-/*        stroke-dasharray: 0 265;*/
         stroke-dashoffset: 265;
     }
     100% {
-/*        stroke-dasharray: 265;*/
         stroke-dashoffset: 0;
     }
 }
@@ -1390,8 +1383,6 @@ footer p a {
     -webkit-animation: draw 0.7s linear forwards;
     animation: draw 0.7s linear forwards;
 }
-
-
 
 /* #-------------------------------# */
 
@@ -1408,6 +1399,7 @@ footer p a {
 @media only screen and (max-width: 1060px) {
 
     /* #-  3.2.1 MENU / NAVIGATION    -# */
+    
     header {
         display: none;
     }
@@ -1427,10 +1419,13 @@ footer p a {
     main.fixed {
         margin-top: 0;
     }
+    
     /* #- 3.2.2 TOP CARD TITLE: ;        -# */
+    
     .top {
         width: 100%
     }
+    
     .topb {
         width: 80%;
         padding: 0 30px;
@@ -1439,6 +1434,7 @@ footer p a {
     }
 
     /* #- 3.2.3 A PROPOS              -# */
+    
     .apropos {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -1480,7 +1476,9 @@ footer p a {
     .aproposText h2 {
         text-align: center;
     }
+    
     /* #- 3.2.4 COMPETENCES           -# */
+    
     .comp {
         width: 80%;
         padding-top: 70px;
@@ -1504,6 +1502,7 @@ footer p a {
     }
 
     /* #- 3.2.5 FORMATION            -# */
+    
     .formation {
         width: 80%;
         padding-top: 70px;
@@ -1527,9 +1526,8 @@ footer p a {
         padding-bottom: 0;
     }
 
-
-
     /* #- 3.2.6 EXPERIENCES         -# */
+    
     .exp {
         width: 80%;
         height: 100%;
@@ -1576,7 +1574,6 @@ footer p a {
         height: 50px;
         padding: 5px;
         background-origin: content-box;
-
     }
 
     #onglet_chauffeur {
@@ -1620,7 +1617,6 @@ footer p a {
         height: 100%;
     }
 
-
     .dev,
     .autre {
         -webkit-box-orient: vertical;
@@ -1632,6 +1628,7 @@ footer p a {
     .autre {
         padding-bottom: 60px;
     }
+    
     .autre h2 {
         padding-top: 40px;
         padding-bottom: 40px;
@@ -1675,6 +1672,7 @@ footer p a {
     .devUnQuart h2 {
         padding-top: 20px;
     }
+    
     .devUnQuart p {
         text-align: center;
         padding-bottom: 10px;
@@ -1702,17 +1700,19 @@ footer p a {
         margin-bottom: 10px;
     }
 
-
     /* #-------------------------------# */
     /* #- 4.0 MENU MOBILE             -# */
     /* #-------------------------------# */
+    
     /* #- 4.0.1 GLOBAL                -# */
+    
     a {
         color: #9cb3a8;
         text-decoration: none;
     }
 
     nav {
+        -webkit-box-shadow: none;
         box-shadow: none;
     }
 
@@ -1721,6 +1721,7 @@ footer p a {
     }
 
     /* #- 4.0.2 CONTENT               -# */
+    
     .imgHeader {
         position: relative;
         z-index: 2;
@@ -1776,9 +1777,14 @@ footer p a {
     }
 
     #contact2 {
-        width: 200px;
+        width: 230px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
+        margin-left: -12px
     }
     
     .cd-nav-trigger {
@@ -1955,7 +1961,12 @@ footer p a {
     .cd-nav .cd-navigation-wrapper {
         /* all navigation content */
         height: 800px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         /*    justify-content: space-between;*/
         overflow-y: auto;
@@ -2013,7 +2024,6 @@ footer p a {
     }
 
     .cd-nav h2::after {
-        /* bottom separation line */
         content: '';
         position: absolute;
         left: 0;
@@ -2028,8 +2038,15 @@ footer p a {
     }
 
     .cd-nav .cd-primary-nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
         justify-content: flex-start;
     }
 
@@ -2038,7 +2055,8 @@ footer p a {
     }
 
     .cd-nav .cd-primary-nav a {
-        font-family: "Merriweather", serif;
+        font-family: "Rubik", serif;
+        font-weight: bold;
         font-size: 2rem;
         color: rgba(255, 255, 255, 0.3);
         display: inline-block;
@@ -2054,13 +2072,21 @@ footer p a {
 
     .cd-nav .cd-contact-info {
         margin-top: 40px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
         justify-content: flex-end;
     }
 
     .cd-nav .cd-contact-info li {
-        font-family: "Merriweather", serif;
+        font-family: "Rubik", serif;
+        font-weight: bold;
         margin-bottom: 1em;
         line-height: 1;
         color: rgba(255, 255, 255, 0.3);
