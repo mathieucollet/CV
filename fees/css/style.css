@@ -480,21 +480,21 @@ Vertical navigation
   }
   .cd-vertical-nav li:nth-of-type(8) a::after {
     background-position: 0px 0px;
-    -webkit-transform: translateX(-50%) translateY(-16.5em) scale(0.01);
-    transform: translateX(-50%) translateY(-16.5em) scale(0.01);
+    -webkit-transform: translateX(-50%) translateY(-17.5em) scale(0.01);
+    transform: translateX(-50%) translateY(-17.5em) scale(0.01);
   }
   .cd-vertical-nav li:nth-of-type(8) a::before {
-    -webkit-transform: translateX(-50%) translateY(-16.5em) scale(0.25);
-    transform: translateX(-50%) translateY(-16.5em) scale(0.25);
+    -webkit-transform: translateX(-50%) translateY(-17.5em) scale(0.25);
+    transform: translateX(-50%) translateY(-17.5em) scale(0.25);
   }
   .cd-vertical-nav li:nth-of-type(9) a::after {
     background-position: 0px 0px;
-    -webkit-transform: translateX(-50%) translateY(-19.5em) scale(0.01);
-    transform: translateX(-50%) translateY(-19.5em) scale(0.01);
+    -webkit-transform: translateX(-50%) translateY(-20.5em) scale(0.01);
+    transform: translateX(-50%) translateY(-20.5em) scale(0.01);
   }
   .cd-vertical-nav li:nth-of-type(9) a::before {
-    -webkit-transform: translateX(-50%) translateY(-19.5em) scale(0.25);
-    transform: translateX(-50%) translateY(-19.5em) scale(0.25);
+    -webkit-transform: translateX(-50%) translateY(-20.5em) scale(0.25);
+    transform: translateX(-50%) translateY(-20.5em) scale(0.25);
   }
 
   .cd-vertical-nav .label {
