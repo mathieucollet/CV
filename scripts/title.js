@@ -167,7 +167,9 @@ $(document).ready(function () {
         "strokeWidth": 4,
         "strokeColor": "#ffffff",
         "speedMultiplier": 0.2,
-        "ease": 'easeInOutCubic'
+        "ease": 'easeInOutCubic',
+        "onComplete": function(){$('#title1 svg path').attr({"fill": '#ffffff', 'fill-opacity': '1'});},
+
     }).lazylinepainter('paint');
     $('#title2').lazylinepainter({
         "svgData": pathObj2,
@@ -175,7 +177,9 @@ $(document).ready(function () {
         "strokeColor": "#ffffff",
         "speedMultiplier": 0.12,
         "reverse": true,
-        "ease": 'easeInOutCubic'
+        "ease": 'easeInOutCubic',
+        "onComplete": function(){$('#title2 svg path').attr({"fill": '#ffffff', 'fill-opacity': '1'});},
+
     }).lazylinepainter('paint');
 
 

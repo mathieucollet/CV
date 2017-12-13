@@ -9,14 +9,14 @@ Primary style
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 80.5%;
 }
 
 body {
   font-size: 1.6rem;
   font-family: "Sintony", sans-serif;
   color: #eaf2e3;
-  background-color: #3a2c41;
+/*  background-color: #3a2c41;*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -33,6 +33,173 @@ a {
   text-indent: 100%;
   white-space: nowrap;
   color: transparent;
+}
+
+#section0 {
+    background: #222222;
+    position: relative;
+}
+#section1 {
+    background: #2bbf42;
+    position: relative;
+}
+.cont1 {
+    padding-top: 400px;
+}
+.cont2 {
+    padding-bottom: 300px;
+}
+#section2 {
+    background: #2b36bf;
+}
+#section3 {
+    background: #baba37;
+    position: relative;
+}
+#section4 {
+    background: #2b8cbf;
+    position: relative;
+}
+#section5 {
+    background: #752bbf;
+    position: relative;
+}
+#section6 {
+    background: #de1010;
+    position: relative;
+}
+#section7 {
+    background: #efae46;
+    position: relative;
+}
+#section8 {
+    background: #42b766;
+    position: relative;
+}
+#section9 {
+    background: #f055de;
+    position: relative;
+}
+
+.fee1 {
+    position: absolute;
+    top:0;
+    left: 100px;
+}
+.fee4 {
+    position: absolute;
+    bottom:0;
+    left: 100px;
+}
+.fee3 {
+    position: absolute;
+    width: 13%;
+    bottom:0;
+    right: 50px;
+}
+.fee2 {
+    position: absolute;
+    width: 22%;
+    top:0;
+    right: 100px;
+}
+.fee5 {
+    position: absolute;
+    width: 22%;
+    top:0;
+    right: 40%;
+}
+.jeremy_joie {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 20%;
+}
+.willy_joie {
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+}
+.jeanne_peur {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 25%;
+}
+.melvyn_peur {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    width: 15%;
+}
+.nico_tristesse {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+}
+.jeanne_tristesse {
+    position: absolute;
+    width: 20%;
+    bottom: 0;
+    left: 0;
+}
+.samuel_colere {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.adrien_colere {
+    position: absolute;
+    width: 25%;
+    bottom: 0;
+    right: 100px;
+}
+.jeremy_conc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 45%
+}
+.paul_joie {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+}
+h3 {
+    padding-top: 20px;
+    font-size: 3em;
+}
+.cd-section > div.quiz {
+    vertical-align: top;
+    padding-top: 100px;
+}
+.cd-section > div.uni {
+    vertical-align: top;
+    padding-top: 200px;
+}
+.groupe {
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+    left: 300px;
+}
+.groupe2 {
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+    left: 300px;
+    z-index: 1;
+}
+#fleche {
+    z-index: 999;
+    bottom: 130px;
+    left: 1020px;
+    position: absolute;
+    width: 10%;
+    height: 10%;
 }
 
 /* -------------------------------- 
@@ -65,7 +232,7 @@ Navigation trigger - visible on small devices only
   position: absolute;
   height: 4px;
   width: 4px;
-  background-color: #3a2c41;
+/*  background-color: #3a2c41;*/
   border-radius: 50%;
   left: 50%;
   top: 50%;
@@ -81,7 +248,7 @@ Navigation trigger - visible on small devices only
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #3a2c41;
+/*  background-color: #3a2c41;*/
   border-radius: inherit;
 }
 .cd-nav-trigger span::before {
@@ -140,7 +307,7 @@ Vertical navigation
   background-color: transparent;
 }
 .cd-vertical-nav.open + .cd-nav-trigger span {
-  background-color: rgba(58, 44, 65, 0);
+/*  background-color: rgba(58, 44, 65, 0);*/
 }
 .cd-vertical-nav.open + .cd-nav-trigger span::before, .cd-vertical-nav.open + .cd-nav-trigger span::after {
   /* transform dots in 'X' icon */
@@ -240,25 +407,14 @@ Vertical navigation
   }
   .cd-vertical-nav a::after {
     /* icon */
-    opacity: 0;
-    top: 8px;
-    height: 16px;
-    width: 16px;
-    background: url(../img/cd-nav-icons.svg) no-repeat;
-    -webkit-transform: translateX(-50%) scale(0);
-    transform: translateX(-50%) scale(0);
-    -webkit-transition: -webkit-transform 0.4s 0s, opacity 0.1s 0.3s;
-    -webkit-transition: opacity 0.1s 0.3s, -webkit-transform 0.4s 0s;
-    transition: opacity 0.1s 0.3s, -webkit-transform 0.4s 0s;
-    transition: transform 0.4s 0s, opacity 0.1s 0.3s;
-    transition: transform 0.4s 0s, opacity 0.1s 0.3s, -webkit-transform 0.4s 0s;
+ 
   }
   .cd-vertical-nav a.active::before, .no-touch .cd-vertical-nav a:hover::before {
     background-color: #c0a672;
   }
   .cd-vertical-nav li:first-of-type a::after {
     /* change icon using image sprites */
-    background-position: 0px -48px;
+/*    background-position: 0px -48px;*/
     /* fix bug with transitions - set scale(0.01) rather than scale(0) */
     -webkit-transform: translateX(-50%) translateY(4.5em) scale(0.01);
     transform: translateX(-50%) translateY(4.5em) scale(0.01);
@@ -268,7 +424,8 @@ Vertical navigation
     transform: translateX(-50%) translateY(4.5em) scale(0.25);
   }
   .cd-vertical-nav li:nth-of-type(2) a::after {
-    background-position: 0px -32px;
+    background: url(../img/cd-nav-icons.svg) no-repeat;
+/*    background-position: 0px -32px;*/
     -webkit-transform: translateX(-50%) translateY(1.5em) scale(0.01);
     transform: translateX(-50%) translateY(1.5em) scale(0.01);
   }
@@ -323,31 +480,23 @@ Vertical navigation
   }
   .cd-vertical-nav li:nth-of-type(8) a::after {
     background-position: 0px 0px;
-    -webkit-transform: translateX(-50%) translateY(-17.5em) scale(0.01);
-    transform: translateX(-50%) translateY(-17.5em) scale(0.01);
+    -webkit-transform: translateX(-50%) translateY(-16.5em) scale(0.01);
+    transform: translateX(-50%) translateY(-16.5em) scale(0.01);
   }
   .cd-vertical-nav li:nth-of-type(8) a::before {
-    -webkit-transform: translateX(-50%) translateY(-75.5em) scale(0.25);
-    transform: translateX(-50%) translateY(-17.5em) scale(0.25);
+    -webkit-transform: translateX(-50%) translateY(-16.5em) scale(0.25);
+    transform: translateX(-50%) translateY(-16.5em) scale(0.25);
   }
   .cd-vertical-nav li:nth-of-type(9) a::after {
     background-position: 0px 0px;
     -webkit-transform: translateX(-50%) translateY(-19.5em) scale(0.01);
-    transform: translateX(-50%) translateY(-20.5em) scale(0.01);
+    transform: translateX(-50%) translateY(-19.5em) scale(0.01);
   }
   .cd-vertical-nav li:nth-of-type(9) a::before {
     -webkit-transform: translateX(-50%) translateY(-19.5em) scale(0.25);
-    transform: translateX(-50%) translateY(-20.5em) scale(0.25);
+    transform: translateX(-50%) translateY(-19.5em) scale(0.25);
   }
-  .cd-vertical-nav li:nth-of-type(10) a::after {
-    background-position: 0px 0px;
-    -webkit-transform: translateX(-50%) translateY(-22.5em) scale(0.01);
-    transform: translateX(-50%) translateY(-23.5em) scale(0.01);
-  }
-  .cd-vertical-nav li:nth-of-type(10) a::before {
-    -webkit-transform: translateX(-50%) translateY(-22.5em) scale(0.25);
-    transform: translateX(-50%) translateY(-23.5em) scale(0.25);
-  }
+
   .cd-vertical-nav .label {
     display: block;
     /* Force Hardware Acceleration */
@@ -392,10 +541,10 @@ Content Sections - basic style
   display: table;
   width: 100%;
   height: 100vh;
-  background: #3a2c41;
+/*  background: #3a2c41;*/
 }
 .cd-section:nth-of-type(even) {
-  background-color: #70557e;
+/*  background-color: #70557e;*/
 }
 .cd-section > div {
   /* vertically align <div> inside <section> */
@@ -407,7 +556,7 @@ Content Sections - basic style
   width: 90%;
   margin: 0 auto;
   text-transform: uppercase;
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   line-height: 1.4;
 }
 .cd-section h1 b, .cd-section h2 b {
