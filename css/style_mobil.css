@@ -625,139 +625,136 @@ main {
 }
 
 .bar1 {
-    background: rgba(244, 156, 19, 0.78);
+    background: rgba(81, 190, 148, 0.78);
 }
 
 .bar1b {
     -webkit-animation-name: appear;
     -webkit-animation-duration: 2s;
     -webkit-animation: 2s ease-out 0s 1 appear;
+    animation-name: appear;
+    animation-duration: 2s;
     animation: 2s ease-out 0s 1 appear;
-    background: #E77E21;
-    width: 64%;
+    background: #51BE95;
+    width: 48%;
 }
 
 .bar1c {
-    background: #D35515;
-}
-
-.bar2 {
-    background: rgba(57, 151, 211, 0.78);
-}
-
-.bar2b {
-    -webkit-animation-name: appear;
-    -webkit-animation-duration: 2s;
-    -webkit-animation: 2s ease-out 0s 1 appear;
-    animation: 2s ease-out 0s 1 appear;
-    background: #3997D3;
-    width: 64%;
-}
-
-.bar2c {
-    background: #35495E;
+    background: #0C4B33;
 }
 
 .bar3 {
-    background: rgba(119, 123, 180, 0.78);
+    background: rgba(255, 221, 84, 0.78);
 }
 
 .bar3b {
     -webkit-animation-name: appear;
     -webkit-animation-duration: 2s;
     -webkit-animation: 2s ease-out 0s 1 appear;
+    animation-name: appear;
+    animation-duration: 2s;
     animation: 2s ease-out 0s 1 appear;
-    background: #777BB4;
-    width: 48%;
+    background: #FFD43B;
+    width: 32%;
 }
 
 .bar3c {
-    background: #4F5385;
+    background: #316A9A;
 }
 
 .bar4 {
-    background: #F6DF1A;
+    background: rgba(136, 146, 191, 0.78);
 }
 
 .bar4b {
     -webkit-animation-name: appear;
     -webkit-animation-duration: 2s;
     -webkit-animation: 2s ease-out 0s 1 appear;
+    animation-name: appear;
+    animation-duration: 2s;
     animation: 2s ease-out 0s 1 appear;
-    background: rgba(251, 188, 21, 0.54);
-    width: 20%;
+    background: #8892BF;
+    width: 48%;
 }
 
 .bar4c {
-    background: #FBBC15;
+    background: #4F5B93;
 }
 
 .bar5 {
-    background: rgba(235, 90, 91, 0.78);
+    background: rgba(243, 201, 86, 0.78);
 }
 
 .bar5b {
     -webkit-animation-name: appear;
     -webkit-animation-duration: 2s;
     -webkit-animation: 2s ease-out 0s 1 appear;
+    animation-name: appear;
+    animation-duration: 2s;
     animation: 2s ease-out 0s 1 appear;
-    background: #eb5a5b;
-    width: 5%;
+    background: #F3C956;
+    width: 40%;
 }
 
 .bar5c {
-    background: #dd3839;
+    background: #E5A228;
 }
 
 .bar6 {
-    background: rgba(85, 180, 110, 0.78);
+    background: rgba(241, 101, 41, 0.78);
 }
 
 .bar6b {
     -webkit-animation-name: appear;
     -webkit-animation-duration: 2s;
     -webkit-animation: 2s ease-out 0s 1 appear;
+    animation-name: appear;
+    animation-duration: 2s;
     animation: 2s ease-out 0s 1 appear;
-    background: #55b46e;
-    width: 5%;
+    background: #F16529;
+    width: 64%;
 }
 
 .bar6c {
-    background: #24813c;
+    background: #E44D26;
 }
 
 .bar7 {
-    background: rgba(148, 91, 161, 0.78);
+    background: rgba(41, 101, 241, 0.78);
 }
 
 .bar7b {
     -webkit-animation-name: appear;
     -webkit-animation-duration: 2s;
     -webkit-animation: 2s ease-out 0s 1 appear;
+    animation-name: appear;
+    animation-duration: 2s;
     animation: 2s ease-out 0s 1 appear;
-    background: #945ba1;
-    width: 5%;
+    background: #2965F1;
+    width: 56%;
 }
 
 .bar7c {
-    background: #712f80;
+    background: #264DE4;
 }
 
 .bar8 {
-    background: rgba(59, 191, 240, 0.78);
+    background: rgba(86, 61, 124, 0.78);
 }
 
 .bar8b {
     -webkit-animation-name: appear;
     -webkit-animation-duration: 2s;
     -webkit-animation: 2s ease-out 0s 1 appear;
+    animation-name: appear;
+    animation-duration: 2s;
     animation: 2s ease-out 0s 1 appear;
-    background: #3bbff0;
-    width: 40%;
+    background: #563D7C;
+    width: 68%;
 }
 
 .bar8c {
-    background: #3b8ff0;
+    background: rgb(63, 41, 95);
 }
 
 .bar9 {
@@ -768,6 +765,8 @@ main {
     -webkit-animation-name: appear;
     -webkit-animation-duration: 2s;
     -webkit-animation: 2s ease-out 0s 1 appear;
+    animation-name: appear;
+    animation-duration: 2s;
     animation: 2s ease-out 0s 1 appear;
     background: #ef7a1a;
     width: 48%;
@@ -785,9 +784,11 @@ main {
     -webkit-animation-name: appear;
     -webkit-animation-duration: 2s;
     -webkit-animation: 2s ease-out 0s 1 appear;
+    animation-name: appear;
+    animation-duration: 2s;
     animation: 2s ease-out 0s 1 appear;
     background: #e94591;
-    width: 5%;
+    width: 24%;
 }
 
 .bar10c {
@@ -802,6 +803,8 @@ main {
     -webkit-animation-name: appear;
     -webkit-animation-duration: 2s;
     -webkit-animation: 2s ease-out 0s 1 appear;
+    animation-name: appear;
+    animation-duration: 2s;
     animation: 2s ease-out 0s 1 appear;
     background: #add5ec;
     width: 48%;
@@ -809,6 +812,25 @@ main {
 
 .bar11c {
     background: #7db3d3;
+}
+
+.bar12 {
+    background: rgba(0, 194, 247, 0.78);
+}
+
+.bar12b {
+    -webkit-animation-name: appear;
+    -webkit-animation-duration: 2s;
+    -webkit-animation: 2s ease-out 0s 1 appear;
+    animation-name: appear;
+    animation-duration: 2s;
+    animation: 2s ease-out 0s 1 appear;
+    background: #00C2F7;
+    width: 40%;
+}
+
+.bar12c {
+    background: rgb(0, 136, 173);
 }
 
 /* #- 2.3.2 COMPETENCES AUTRES         -# */
