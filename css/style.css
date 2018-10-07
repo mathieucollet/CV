@@ -1184,7 +1184,7 @@ main {
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .autre {
@@ -1214,11 +1214,27 @@ main {
     font-size: 1.2em;
 }
 
+.dev li.obj {
+    text-align: left;
+}
+
+.dev li.obj::before {
+    content: "- ";
+}
+
 .dev p,
 .dev li {
     font-size: 1.1em;
     color: black;
     text-align: justify;
+    width: 100%;
+}
+
+.dev ul {
+    width: 90%;
+    margin: 0;
+    margin-left: 5%;
+    text-align: left;
 }
 
 .dev .part2 {
@@ -1250,7 +1266,14 @@ main {
     padding-left: 20px;
 }
 
+#contenu_onglet_developpeur .devDeux,
+#contenu_onglet_chauffeur .devUn {
+    margin-bottom: 10px;
+}
+
 .sep {
+    margin-top: auto;
+    margin-bottom: auto;
     height: 75%;
     width: 0.4%;
     background: #ececec;
