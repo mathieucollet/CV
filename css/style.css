@@ -271,6 +271,10 @@ nav {
     margin: auto;
 }
 
+.gris {
+    color: #808080;
+}
+
 .menu a {
     font-size: 1.5em;
     color: #808080;
@@ -362,7 +366,6 @@ main {
     margin: auto;
     background: white;
     padding: 30px;
-    border-radius: 10px;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
     z-index: 2;
@@ -372,7 +375,6 @@ main {
 
 .apropos img {
     width: 90%;
-    border-radius: 10px;
     z-index: 2;
     padding: 0;
     margin: 0;
@@ -429,7 +431,6 @@ main {
 .topb {
     height: 40px;
     width: 20%;
-    border-radius: 15px;
     z-index: 3;
     margin-bottom: -20px;
     color: white;
@@ -487,353 +488,12 @@ main {
     margin: auto;
     background: white;
     padding: 30px;
-    border-radius: 10px;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 
-.barres {
-    width: 450px;
-}
-
-.barres ul li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    position: relative;
-    height: 27px;
-    padding-top: 11px;
-}
-
-.barres ul li h2 {
-    color: #eb5a5b;
-    font-size: 1.5em;
-    font-weight: 700;
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-}
-
-.secondh2 {
-    margin-top: 15px;
-}
-
-/* #- 2.3.1 BARRES                -# */
-
-.progress-bar1 {
-    width: 80%;
-    height: 25px;
-    border-radius: 0 15px 15px 0;
-    position: absolute;
-    left: 20%;
-}
-
-.progress-bar1b {
-    width: 64%;
-    height: 25px;
-    position: absolute;
-    left: 20%;
-}
-
-.progress-bar1c {
-    width: 20%;
-    height: 25px;
-    position: absolute;
-    left: 0;
-}
-
-.text1 {
-    display: none;
-}
-
-.progress-text1 {
-    color: white;
-    height: 25px;
+.wordcloud {
     width: 100%;
-    position: absolute;
-    line-height: 28px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-
-@-webkit-keyframes text {
-    0% {
-        opacity: 0;
-    }
-    80% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes text {
-    0% {
-        opacity: 0;
-    }
-    66% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.progress-text1 p:nth-child(2) {
-    -webkit-animation-name: text;
-    -webkit-animation-duration: 2s;
-    -webkit-animation: 3s ease-out 0s 1 text;
-    animation-name: text;
-    animation-duration: 2s;
-    animation: 3s ease-out 0s 1 text;
-    display: block;
-    width: 50%;
-    text-align: right;
-    padding-right: 4%;
-}
-
-.progress-text1 p:nth-child(1) {
-    width: 17%;
-    display: block;
-    padding-left: 5px;
-}
-
-@-webkit-keyframes appear {
-    0% {
-        width: 0;
-    }
-    100% {
-        min-width: auto;
-    }
-}
-
-@keyframes appear {
-    0% {
-        width: 0;
-    }
-    100% {
-        min-width: auto;
-    }
-}
-
-.bar1 {
-    background: rgba(81, 190, 148, 0.78);
-}
-
-.bar1b {
-    -webkit-animation-name: appear;
-    -webkit-animation-duration: 2s;
-    -webkit-animation: 2s ease-out 0s 1 appear;
-    animation-name: appear;
-    animation-duration: 2s;
-    animation: 2s ease-out 0s 1 appear;
-    background: #51BE95;
-    width: 48%;
-}
-
-.bar1c {
-    background: #0C4B33;
-}
-
-.bar3 {
-    background: rgba(255, 221, 84, 0.78);
-}
-
-.bar3b {
-    -webkit-animation-name: appear;
-    -webkit-animation-duration: 2s;
-    -webkit-animation: 2s ease-out 0s 1 appear;
-    animation-name: appear;
-    animation-duration: 2s;
-    animation: 2s ease-out 0s 1 appear;
-    background: #FFD43B;
-    width: 32%;
-}
-
-.bar3c {
-    background: #316A9A;
-}
-
-.bar4 {
-    background: rgba(136, 146, 191, 0.78);
-}
-
-.bar4b {
-    -webkit-animation-name: appear;
-    -webkit-animation-duration: 2s;
-    -webkit-animation: 2s ease-out 0s 1 appear;
-    animation-name: appear;
-    animation-duration: 2s;
-    animation: 2s ease-out 0s 1 appear;
-    background: #8892BF;
-    width: 48%;
-}
-
-.bar4c {
-    background: #4F5B93;
-}
-
-.bar5 {
-    background: rgba(243, 201, 86, 0.78);
-}
-
-.bar5b {
-    -webkit-animation-name: appear;
-    -webkit-animation-duration: 2s;
-    -webkit-animation: 2s ease-out 0s 1 appear;
-    animation-name: appear;
-    animation-duration: 2s;
-    animation: 2s ease-out 0s 1 appear;
-    background: #F3C956;
-    width: 40%;
-}
-
-.bar5c {
-    background: #E5A228;
-}
-
-.bar6 {
-    background: rgba(241, 101, 41, 0.78);
-}
-
-.bar6b {
-    -webkit-animation-name: appear;
-    -webkit-animation-duration: 2s;
-    -webkit-animation: 2s ease-out 0s 1 appear;
-    animation-name: appear;
-    animation-duration: 2s;
-    animation: 2s ease-out 0s 1 appear;
-    background: #F16529;
-    width: 64%;
-}
-
-.bar6c {
-    background: #E44D26;
-}
-
-.bar7 {
-    background: rgba(41, 101, 241, 0.78);
-}
-
-.bar7b {
-    -webkit-animation-name: appear;
-    -webkit-animation-duration: 2s;
-    -webkit-animation: 2s ease-out 0s 1 appear;
-    animation-name: appear;
-    animation-duration: 2s;
-    animation: 2s ease-out 0s 1 appear;
-    background: #2965F1;
-    width: 56%;
-}
-
-.bar7c {
-    background: #264DE4;
-}
-
-.bar8 {
-    background: rgba(86, 61, 124, 0.78);
-}
-
-.bar8b {
-    -webkit-animation-name: appear;
-    -webkit-animation-duration: 2s;
-    -webkit-animation: 2s ease-out 0s 1 appear;
-    animation-name: appear;
-    animation-duration: 2s;
-    animation: 2s ease-out 0s 1 appear;
-    background: #563D7C;
-    width: 68%;
-}
-
-.bar8c {
-    background: rgb(63, 41, 95);
-}
-
-.bar9 {
-    background: rgba(239, 122, 26, 0.78);
-}
-
-.bar9b {
-    -webkit-animation-name: appear;
-    -webkit-animation-duration: 2s;
-    -webkit-animation: 2s ease-out 0s 1 appear;
-    animation-name: appear;
-    animation-duration: 2s;
-    animation: 2s ease-out 0s 1 appear;
-    background: #ef7a1a;
-    width: 48%;
-}
-
-.bar9c {
-    background: #bc5b0b;
-}
-
-.bar10 {
-    background: rgba(233, 69, 145, 0.78);
-}
-
-.bar10b {
-    -webkit-animation-name: appear;
-    -webkit-animation-duration: 2s;
-    -webkit-animation: 2s ease-out 0s 1 appear;
-    animation-name: appear;
-    animation-duration: 2s;
-    animation: 2s ease-out 0s 1 appear;
-    background: #e94591;
-    width: 24%;
-}
-
-.bar10c {
-    background: #c3256e;
-}
-
-.bar11 {
-    background: rgba(173, 213, 236, 0.78);
-}
-
-.bar11b {
-    -webkit-animation-name: appear;
-    -webkit-animation-duration: 2s;
-    -webkit-animation: 2s ease-out 0s 1 appear;
-    animation-name: appear;
-    animation-duration: 2s;
-    animation: 2s ease-out 0s 1 appear;
-    background: #add5ec;
-    width: 48%;
-}
-
-.bar11c {
-    background: #7db3d3;
-}
-
-.bar12 {
-    background: rgba(0, 194, 247, 0.78);
-}
-
-.bar12b {
-    -webkit-animation-name: appear;
-    -webkit-animation-duration: 2s;
-    -webkit-animation: 2s ease-out 0s 1 appear;
-    animation-name: appear;
-    animation-duration: 2s;
-    animation: 2s ease-out 0s 1 appear;
-    background: #00C2F7;
-    width: 40%;
-}
-
-.bar12c {
-    background: rgb(0, 136, 173);
 }
 
 /* #- 2.3.2 COMPETENCES AUTRES         -# */
@@ -896,7 +556,6 @@ main {
     margin: auto;
     background: white;
     padding: 30px;
-    border-radius: 10px;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 
@@ -1050,7 +709,6 @@ main {
     margin: auto;
     background: white;
     padding: 30px;
-    border-radius: 10px;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
