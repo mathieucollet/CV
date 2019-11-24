@@ -13,9 +13,11 @@ document.addEventListener(
 	'wheel',
 	evt => {
 		var cornerShow =
-			window.scrollY > 20 && window.scrollMaxY - window.scrollY > 400;
+			window.pageYOffset > 20 &&
+			window.scrollMaxY - window.pageYOffset > 400;
 		var sideShow =
-			window.scrollY > 100 && window.scrollMaxY - window.scrollY > 400;
+			window.pageYOffset > 100 &&
+			window.scrollMaxY - window.pageYOffset > 400;
 
 		cornerLink.classList['replace'](
 			cornerShow ? 'cornerInvisible' : 'cornerVisible',
