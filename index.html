@@ -1,793 +1,453 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="fr">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta charset="UTF-8">
+    <title>Laravel</title>
 
-    <title>CV de Mathieu Collet</title>
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/css/line-awesome.min.css">
 
-    <meta name="description" content="Curriculum Vitae de Mathieu Collet." />
+    <!-- Libraries -->
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
 
-    <!-- #-------------------------------# -->
-    <!-- #- Twitter Card Data           -# -->
-    <!-- #-------------------------------# -->
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Poppins&display=swap" rel="stylesheet">
 
-    <meta name="twitter:card" value="Curriculum Vitae de Mathieu Collet.">
-
-    <!-- #-------------------------------# -->
-    <!-- #- Open Graph Data             -# -->
-    <!-- #-------------------------------# -->
-
-    <meta property="og:title" content="CV de Mathieu Collet" />
-
-    <meta property="og:type" content="website" />
-
-    <meta property="og:url" content="mathieucollet.github.io" />
-
-    <meta property="og:image" content="img/math.jpg" />
-
-    <meta property="og:description" content="Curriculum Vitae de Mathieu Collet." />
-
-    <meta name="google-site-verification" content="-uAxG0qsvQrmKpTLTepCoXM55ZIWsGslnuPpObj7t3k" />
-
-    <!-- #-------------------------------# -->
-    <!-- #- CSS                         -# -->
-    <!-- #-------------------------------# -->
-
-    <link rel="stylesheet" href="css/reset.css">
-
-    <!-- #-------------------------------# -->
-    <!-- #- Icones                      -# -->
-    <!-- #-------------------------------# -->
-
-    <link rel="shortcut icon" href="icons/favicon.ico">
-
-    <link rel="icon" type="image/png" href="icons/favicon-192x192.png" sizes="192x192">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180x180.png">
-
-    <!-- #-------------------------------# -->
-    <!-- #- Polices                     -# -->
-    <!-- #-------------------------------# -->
-
-    <link href="https://fonts.googleapis.com/css?family=Rubik|Hammersmith+One|Oswald:400,700|Open+Sans:400,800,700" rel="stylesheet">
-
-    <script language="javascript">
-        if (navigator.userAgent.match(/Android/i) ||
-            navigator.userAgent.match(/webOS/i) ||
-            navigator.userAgent.match(/iPhone/i) ||
-            navigator.userAgent.match(/iPad/i) ||
-            navigator.userAgent.match(/iPod/i) ||
-            navigator.userAgent.match(/BlackBerry/i) ||
-            navigator.userAgent.match(/Windows Phone/i)) {
-            document.write('<meta name="viewport" content="width=device-width, initial-scale=0.6, user-scalable=no" />');
-            document.write('<link rel="stylesheet" href="css/style_mobil.css">')
-        } else {
-            document.write('<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />');
-            document.write('<link rel="stylesheet" href="css/style.css">');
-        }
-    </script>
+    <!-- Styles -->
+    <link href="/css/style.css" rel="stylesheet" media="screen">
+    <link href="/css/print.css" rel="stylesheet" media="print">
 </head>
 
-<body id="accueil">
-
-    <!-- #-------------------------------# -->
-    <!-- #- HEADER                      -# -->
-    <!-- #-------------------------------# -->
-
-    <!-- #-------------------------------# -->
-    <!-- #- IMAGE DU HEADER             -# -->
-    <!-- #-------------------------------# -->
-
-    <div class="imgHeader">
-
-        <div class="title">
-
-            <div id="title1"></div>
-
-            <div class="vide"></div>
-
-            <div id="title2"></div>
-
-        </div>
-
-        <div class="arrows">
-
-            <a href="#aPropos" class="fleches">
-
-                <img src="img/arrow2.png" alt="Flèche" class="ar1">
-
-                <img src="img/arrow2.png" alt="Flèche" class="ar2">
-
-                <img src="img/arrow2.png" alt="Flèche" class="ar3">
-
-            </a>
-
-        </div>
-
-    </div>
-
-    <div id="aPropos"></div>
-
-    <div class="header">
-
-        <header>
-
-            <!-- #-------------------------------# -->
-            <!-- #- TEXTE HEADER                -# -->
-            <!-- #-------------------------------# -->
-
-            <div class="headerTop"></div>
-
-            <!-- #-------------------------------# -->
-            <!-- #- MENU / NAV                  -# -->
-            <!-- #-------------------------------# -->
-
-            <nav>
-
-                <ul class="menu">
-
-                    <li><a href="#accueil">Accueil</a></li>
-
-                    <li><a href="#aPropos" class="hov1">À propos</a></li>
-
-                    <li><a href="#competences" class="hov2">Compétences</a></li>
-
-                    <li><a href="#formations" class="hov3">Formations</a></li>
-
-                    <li><a href="#experiences" class="hov4">Expériences</a></li>
-
-                    <li><a href="#contact" class="hov5">Contact</a></li>
-
-                </ul>
-
+<body>
+    <main class="h-screen">
+        <div class="w-full bg-white">
+            <!-- Navigation -->
+            <nav class="flex justify-center lg:justify-between items-center w-11/12 lg:w-2/3 h-32 mx-auto">
+                <p class="text-5xl text-blue font-title">Mathieu Collet</p>
+                <div class="items-center hidden lg:flex">
+                    <a href="#competences">
+                        <button>
+                            Compétences
+                        </button>
+                    </a>
+                    <a href="#parcours">
+                        <button class="pl-6">
+                            Parcours
+                        </button>
+                    </a>
+                    <a href="#footer">
+                        <button class="topContact">
+                            CONTACT
+                        </button>
+                    </a>
+                    <a href="#footer">
+                        <button class="sideContact sideInvisible">
+                            CONTACT
+                        </button>
+                    </a>
+                </div>
+                <a href="#footer" class="cornerLink cornerInvisible">
+                    <i class="la la-address-book"></i>
+                </a>
             </nav>
-
-        </header>
-
-    </div>
-
-
-    <!-- #-------------------------------# -->
-    <!-- #- MAIN                        -# -->
-    <!-- #-------------------------------# -->
-
-    <main>
-
-        <!-- #-------------------------------# -->
-        <!-- #- A PROPOS                    -# -->
-        <!-- #-------------------------------# -->
-
-        <section class="sec1">
-
-            <div class="top">
-
-                <div class="topb one">
-
-                    <h1>Mon histoire</h1>
-
-                </div>
-
-            </div>
-
-            <div class="apropos">
-
-                <!-- #-------------------------------# -->
-                <!-- #- PHOTO A PROPOS              -# -->
-                <!-- #-------------------------------# -->
-
-                <div class="photoContainer">
-
-                    <img src="img/math2.png" alt="photo de Mathieu Collet">
-
-                </div>
-
-                <!-- #-------------------------------# -->
-                <!-- #- TEXT A PROPOS               -# -->
-                <!-- #-------------------------------# -->
-
-                <div class="aproposText">
-
-                    <h2>Un parcours atypique</h2>
-
-                    <p>À 33 ans, je suis un jeune étudiant en développement numérique dans la région rennaise. Après
-                        avoir été chauffeur poids lourd pendant neuf ans, j’ai décidé de transformer ma passion pour le
-                        Web en métier.</p>
-
-                    <p class="part2">Élève assidu avec de bons résultats, j’adore créer des interfaces claires,
-                        élégantes et faciles d’utilisation. Je suis passionné par les technologies Web et je porte une
-                        grande attention à l’expérience utilisateur et au design inclusif.</p>
-
-                    <p>Dans le cadre de mes études, je suis à la recherche d’un stage du 14 janvier au 15 mars 2019 et
-                        d'une alternance pour la saison 2019/2020. N’hésitez pas à prendre contacte avec moi.</p>
-
-                </div>
-
-            </div>
-
-            <!-- #-------------------------------# -->
-            <!-- #- LIEN => COMPETENCES         -# -->
-            <!-- #-------------------------------# -->
-
-            <div id="competences"></div>
-
-        </section>
-
-        <!-- #-------------------------------# -->
-        <!-- #- COMPETENCES                 -# -->
-        <!-- #-------------------------------# -->
-
-        <section class="sec2">
-
-            <div class="top">
-
-                <div class="topb two">
-
-                    <h1>Compétences</h1>
-
-                </div>
-
-            </div>
-
-            <div class="comp">
-
-                <!-- #-------------------------------# -->
-                <!-- #- BARRES DE PROGRESSION       -# -->
-                <!-- #-------------------------------# -->
-
-                <div class="barres">
-
-                    <img src="img/wordcloud.png" alt="competences word cloud" class="wordcloud">
-
-                </div>
-
-                <!-- #-------------------------------# -->
-                <!-- #- COMPETENCES AUTRES          -# -->
-                <!-- #-------------------------------# -->
-
-                <div class="compText">
-
-                    <h2>Divers</h2>
-
-                    <div class="compTextHarmo">
-
-                        <div>
-
-                            <h3>Méthode agile</h3>
-
-                            <p>Pratique des mêlées quotidiennes (ou stand-up meeting) et utilisation des sprints en
-                                entreprise.</p>
-
+            <!-- Hero -->
+            <div class="my-6">
+                <div id="hero"
+                    class="w-11/12 py-12 lg:py-0 h-full lg:h-128 rounded-xl m-auto relative flex items-center">
+                    <div class="w-full lg:w-1/2">
+                        <div class="w-10/12 lg:w-7/12 m-auto text-white">
+                            <h2 class="text-5xl font-bold text-center lg:text-left font-title">Développeur
+                                full-stack</h2>
+                            <p class="pt-6">
+                                À 34 ans, je suis un jeune étudiant en développement web dans la région rennaise.
+                                Après avoir été chauffeur poids lourd pendant neuf ans, j’ai décidé de transformer ma
+                                passion pour le Web en métier.
+                            </p>
                         </div>
-
-                        <div>
-
-                            <h3>Gestion de projet</h3>
-
-                            <p>Travail tout au long de la scolarité en gestion de projet.</p>
-
+                    </div>
+                    <div class="hidden lg:block"></div>
+                    <img src="/img/hero3.svg" id="hero-svg" class="absolute w-176 hidden lg:block">
+                </div>
+            </div>
+            <!-- Corp -->
+            <div class="w-11/12 md:w-8/12 pt-12 lg:pt-24 m-auto">
+                <!-- Title section-->
+                <h2 id="competences" class="font-title text-3xl lg:text-4xl text-center">Des compétences à votre service
+                </h2>
+                <!-- Skills section -->
+                <div class="pt-6 lg:pt-12">
+                    <div class="flex flex-wrap flex-col md:flex-row justify-between">
+                        <div class="flex sm:w-full md:w-1/2 lg:w-1/3 pt-6 lg:pt-12 md:px-4">
+                            <div>
+                                <i class="lab la-php rounded-full p-1"></i>
+                            </div>
+                            <div class="pl-6">
+                                <h3 class="font-title text-2xl pt-1">PHP</h3>
+                                <p class="pt-2"><span class="font-semibold">Laravel</span> - CakePHP - PHP</p>
+                            </div>
                         </div>
-
-                        <div>
-
-                            <h3>Veille informationnelle</h3>
-
-                            <p>Par passion et par nécessité, veille gérée avec Inoreader sur les langages, l’expérience
-                                utilisateur, le design inclusif et les nouvelles technologies. </p>
-
+                        <div class="flex sm:w-full md:w-1/2 lg:w-1/3 pt-12 md:px-4">
+                            <div>
+                                <i class="lab la-js-square rounded-full p-1"></i>
+                            </div>
+                            <div class="pl-6">
+                                <h3 class="font-title text-2xl pt-1">Javascript</h3>
+                                <p class="pt-2"><span class="font-semibold">Vue.js</span> - Jquery - Angular -
+                                    Javascript
+                                </p>
+                            </div>
                         </div>
-
-                        <div>
-
-                            <h3>SEO | E-commerce | Marketing</h3>
-
-                            <p>Quelques notions pour le moment, cela fait partie du programme.</p>
-
+                        <div class="flex sm:w-full md:w-1/2 lg:w-1/3 pt-12 md:px-4">
+                            <div>
+                                <i class="lab la-python rounded-full p-1"></i>
+                            </div>
+                            <div class="pl-6">
+                                <h3 class="font-title text-2xl pt-1">Python</h3>
+                                <p class="pt-2"><span class="font-semibold">Django</span> - Python</p>
+                            </div>
                         </div>
-
+                        <div class="flex sm:w-full md:w-1/2 lg:w-1/3 pt-12 md:px-4">
+                            <div>
+                                <i class="lab la-css3 rounded-full p-1"></i>
+                            </div>
+                            <div class="pl-6">
+                                <h3 class="font-title text-2xl pt-1">CSS</h3>
+                                <p class="pt-2"><span class="font-semibold">Sass</span> - Scss - Tailwind - Bootstrap -
+                                    Bulma - CSS</p>
+                            </div>
+                        </div>
+                        <div class="flex sm:w-full md:w-1/2 lg:w-1/3 pt-12 md:px-4">
+                            <div>
+                                <i class="la la-users rounded-full p-1 text-green"></i>
+                            </div>
+                            <div class="pl-6">
+                                <h3 class="font-title text-2xl pt-1">Méthodes Agiles</h3>
+                                <p class="pt-2"><span class="font-semibold">Scrum</span> - Kanban - Sprint - Planning -
+                                    Review</p>
+                            </div>
+                        </div>
+                        <div class="flex sm:w-full md:w-1/2 lg:w-1/3 pt-12 md:px-4">
+                            <div>
+                                <i class="lab la-js-square rounded-full p-1"></i>
+                            </div>
+                            <div class="pl-6">
+                                <h3 class="font-title text-2xl pt-1">Modélisation & conception</h3>
+                                <p class="pt-2"><span class="font-semibold">SQL</span> - Tests - UML - Administration
+                                </p>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
-
-            </div>
-
-            <!-- #-------------------------------# -->
-            <!-- #- LIEN => FORMATIONS          -# -->
-            <!-- #-------------------------------# -->
-
-            <div id="formations"></div>
-
-        </section>
-
-        <section class="sec3">
-
-            <div class="top">
-
-                <div class="topb three">
-
-                    <h1>Formation</h1>
-
-                </div>
-
-            </div>
-
-            <div class="formation">
-
-                <!-- #-------------------------------# -->
-                <!-- #- NEW FORMATION               -# -->
-                <!-- #-------------------------------# -->
-
-                <div class="new">
-
-                    <div class="imgMds">
-
-                        <a href="http://www.mydigitalschool.com/" title="www.mydigitalschool.com" target="_blank">
-
-                            <img src="img/mds2.png" alt="My Digital School">
-
-                        </a>
+                <!-- Title section-->
+                <h2 id="parcours" class="font-title text-3xl lg:text-4xl text-center pt-12 lg:pt-24">Mon parcours</h2>
+                <section id="cd-timeline" class="cd-container">
+                    <div class="cd-timeline-block pt-12" data-aos="fade-up">
+                        <div class="cd-timeline-img cd-picture" style="top: 57px;">
+                        </div>
+                        <div class="cd-timeline-content">
+                            <div class="flex items-center">
+                                <h2>Projets</h2>
+                            </div>
+                            <div class="timeline-content-info">
+                                <span class="timeline-content-info-title">
+                                    <i class="la la-code" aria-hidden="true"></i>
+                                    Développeur full-stack
+                                </span>
+                                <span class="timeline-content-info-date">
+                                    <i class="la la-calendar-o" aria-hidden="true"></i>
+                                    2019 / 2020
+                                </span>
+                            </div>
+                            <p>
+                                Dans le cadre de mon diplôme de troisième année, je réalise actuellement un projet
+                                de réseau réellement social au sein d'un groupe pluridisciplinaire.
+                            </p>
+                            <p>
+                                Mes responsabilités :
+                            </p>
+                            <ul>
+                                <li>modélisation UML et diagramme entité-relation ;</li>
+                                <li>développement du back-end sous forme d'une API sous Laravel, en TDD ;</li>
+                                <li>développement du front-end sous Nuxt.js ;</li>
+                                <li>mise en place d'un serveur d'hebergement et de déploiement automatique.</li>
+                            </ul>
+                            <hr class="mt-4">
+                            <p>
+                                À titre personnel, je développe également une application web comprenant plusieurs
+                                outils
+                                comme un gestionnaire de snippets par exemple.
+                            </p>
+                            <p>
+                                Sous forme de SPA et développée en TDD, cette application est à la fois un bac à sable
+                                me
+                                permettant de m'entrainer et d'apprendre mais aussi un véritable outil que je compte
+                                utiliser à terme.
+                            </p>
+                            <ul class="content-skills mt-4">
+                                <li>Laravel</li>
+                                <li>Nuxt.js - Vue.js</li>
+                                <li>SCSS - Tailwindcss</li>
+                                <li>PlantUML - dbdiagram.io - SQL</li>
+                                <li>Heroku</li>
+                            </ul>
+                        </div>
                     </div>
-
-
-                    <div class="textMds">
-
-                        <h2>Bachelor Developpeur Digital<br>2017 - 2020 | Première année | Rennes</h2>
-
-                        <p class="part2">Le Bachelor Développeur digital est une formation en 3 ans qui permet de faire
-                            l’acquisition de la méthodologie de travail et de gestion d’un projet web ou mobile de sa
-                            conception, en passant par sa programmation et son développement.</p>
-
-                        <p>Les deux premières années s’articulent autour de l’assimilation des concepts et compétences
-                            techniques
-                            du web indispensables pour évoluer par la suite dans cet univers professionnel. S’y ajoute
-                            un bagage de compétences transversales (e-business, marketing, gestion de projet).</p>
-
-                        <p class="part2">Le détail du programme est disponible sur <a href="https://www.mydigitalschool.com/bachelor-developpeur-digital-web?o=programme"
-                                title="Programme Bachelor Développeur Digital" target="_blank">le site de l’école</a>.</p>
-
-                        <p>J'ai pu réaliser deux projets au cours de la première année.<br><span class="gris">Le
-                                premier à réaliser en groupe avait comme sujet imposé de promouvoir l'école et cette
-                                première année de formation.</span><br>Le deuxième était un projet à réaliser en POO
-                            avec PHP et une base de données (j'ai également utilisé le framework CSS Bootstrap et le
-                            moteur de template TWIG). En autonomie, j'ai produit un site permettant aux ASMAT ou aux
-                            parents employeurs de gérer leurs contrats et leurs plannings.</p>
-
+                    <div class="cd-timeline-block pt-12" data-aos="fade-up">
+                        <div class="cd-timeline-img cd-picture" style="top: 57px;">
+                        </div>
+                        <div class="cd-timeline-content">
+                            <div class="flex items-center">
+                                <h2><a href="https://www.webandcow.com/" target="_blank" rel="noopener noreferrer">Web
+                                        and
+                                        Cow&nbsp;</a></h2>
+                                <span class="text-gray-dark text-sm">&nbsp;- Alternance</span>
+                            </div>
+                            <div class="timeline-content-info">
+                                <span class="timeline-content-info-title">
+                                    <i class="la la-code" aria-hidden="true"></i>
+                                    Développeur full-stack
+                                </span>
+                                <span class="timeline-content-info-date">
+                                    <i class="la la-calendar-o" aria-hidden="true"></i>
+                                    Août 2019 - Juillet 2020
+                                </span>
+                            </div>
+                            <p>
+                                Au sein d'une équipe de cinq développeurs et un designeur, conception et développement
+                                d'application web principalement pour l'association
+                                <a class="text-orange hover:text-orange-lighter"
+                                    href="https://www.bleu-blanc-coeur.org/" target="_blank"
+                                    rel="noopener noreferrer">Bleu-Blanc-Cœur</a>
+                                et pour des
+                                clients privés.
+                            </p>
+                            <ul class="content-skills">
+                                <li>CakePHP</li>
+                                <li>JS - JQuery - Vue</li>
+                                <li>CSS - Sass</li>
+                                <li>SQL</li>
+                            </ul>
+                        </div>
                     </div>
+                    <div class="cd-timeline-block" data-aos="fade-up">
+                        <div class="cd-timeline-img cd-picture">
+                        </div>
+                        <div class="cd-timeline-content">
 
-                </div>
-
-                <div class="old">
-
-                    <div class="imgAftral">
-
-                        <a href="https://www.aftral.com" title="www.aftral.com" target="_blank">
-
-                            <img src="img/aftral.png" alt="Aftral">
-
-                        </a>
-
-                    </div>
-
-                    <div class="textAftral">
-
-                        <h2>Titre Pro Transport de marchandises<br>2007 - 2008 | Cesson-Sévigné</h2>
-
-                        <p>Cette formation qui dure 1 an (dont 6 mois en entreprise) permet d’obtenir les permis C et
-                            EC et les compétences nécessaires à la conduite de véhicules lourds.</p>
-
-                    </div>
-
-                    <div class="imgOcr">
-
-                        <a href="https://openclassrooms.com/" title="openclassrooms.com" target="_blank">
-
-                            <img src="img/ocr.png" alt="Openclassrooms">
-
-                        </a>
-                    </div>
-
-                    <div class="textOcr">
-
-                        <h2>Certificats de réussite<br>2017 - 20..</h2>
-
-                        <p>Openclassrooms me permet d’enrichir mes connaissances et de faire des mises en pratique
-                            complémentaires.</p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div id="experiences"></div>
-
-        </section>
-
-        <section class="sec4">
-
-            <div class="top">
-
-                <div class="topb four">
-
-                    <h1>Expériences</h1>
-
-                </div>
-
-            </div>
-
-            <div class="exp">
-
-                <div class="systeme_onglets">
-
-                    <div class="onglets">
-
-                        <span class="onglet_0 onglet" id="onglet_developpeur" onclick="javascript:change_onglet('developpeur');"></span>
-
-                        <span class="onglet_0 onglet" id="onglet_chauffeur" onclick="javascript:change_onglet('chauffeur');"
-                            style="background-color: #ececec"></span>
-
-                        <span class="onglet_0 onglet" id="onglet_autres" onclick="javascript:change_onglet('autres');"
-                            style="background-color: #ececec"></span>
-
-                    </div>
-
-                    <div class="contenu_onglets">
-
-                        <div class="contenu_onglet" id="contenu_onglet_developpeur">
-
-                            <div class="dev">
-
-                                <div class="devUn">
-
-                                    <a href="https://wizdeo.com/fr/" title="wizdeo.com" target="_blank">
-                                        <img src="img/wizdeo.png" alt="Wizdeo" class="wizdeo"></a>
-
-                                    <h2>Analytics & MCN | Cesson-Sévigné</h2>
-
-                                    <p>Stage au cœur de cette société qui commercialise du Big Data Youtube et gère la
-                                        promotion et la monétisation de Youtuber.</p>
-
-                                    <p class="part2">Découverte des différents métiers de développeur et du travail en
-                                        méthode agile (sprints, scrums...).</p>
-
-                                </div>
-
-                                <div class="sep"></div>
-
-                                <div class="devDeux">
-
-                                    <a href="http://www.cgemy.com/" title="cgemy.com" target="_blank">
-                                        <img src="img/cedricgemy.png" alt="Cédric Gémy" class="cgemy"></a>
-
-                                    <h2 class="cgemyh">Cédric Gémy | Rennes</h2>
-
-                                    <p>Consultant informatique, graphiste, développeur et formateur. Il est aussi
-                                        contributeur de nombreux projets libres (Inkscape, Gimp, Scribus...).</p>
-
-                                    <p class="part2">Stage de deux mois avec pour objectif de travailler avec Python et
-                                        son framework Django sur la plateforme
-                                        interne de l'école gérée par Cédric Gémy : <a href="https://www.activdesign.eu/index.php"
-                                            title="activdesign.eu" target="_blank">Activdesign</a>.</p>
-                                    <p>Réalisations :</p>
-                                    <ul class="part3">
-                                        <li class="obj">Amélioration de l'administration</li>
-                                        <li class="obj">Automatisation de la création des promotions, des cours et du
-                                            planning</li>
-                                        <li class="obj">Création d'un système d'évaluation géré par les tuteurs et
-                                            consultable par
-                                            les élèves</li>
-                                        <li class="obj">Mise en place d'une CVthèque</li>
-                                    </ul>
-                                </div>
+                            <div class="flex items-center">
+                                <h2><a href="https://www.webandcow.com/" target="_blank" rel="noopener noreferrer">Web
+                                        and
+                                        Cow&nbsp;</a></h2>
+                                <span class="text-gray-dark text-sm">&nbsp;- Stage</span>
+                            </div>
+                            <div class="timeline-content-info">
+                                <span class="timeline-content-info-title">
+                                    <i class="la la-code" aria-hidden="true"></i>
+                                    Développeur full-stack
+                                </span>
+                                <span class="timeline-content-info-date">
+                                    <i class="la la-calendar-o" aria-hidden="true"></i>
+                                    Février 2019 - Avril 2019
+                                </span>
+                            </div>
+                            <p>
+                                Développement d'une application interne à la société, afin de faciliter
+                                la gestion des devis, contrats et factures.
+                            </p>
+                            <p>
+                                Refonte logique et visuelle d'un outil de
+                                vulgarisation de statistiques, à destination des adhérents de <a
+                                    class="text-orange hover:text-orange-lighter"
+                                    href="https://www.bleu-blanc-coeur.org/" target="_blank"
+                                    rel="noopener noreferrer">Bleu-Blanc-Cœur</a>.
+                            </p>
+                            <div class="text-right">
 
                             </div>
-
+                            <ul class="content-skills">
+                                <li>CakePHP</li>
+                                <li>JS - JQuery</li>
+                                <li>CSS</li>
+                                <li>SQL</li>
+                            </ul>
+                        </div> <!-- cd-timeline-content -->
+                    </div> <!-- cd-timeline-block -->
+                    <div class="cd-timeline-block" data-aos="fade-up">
+                        <div class="cd-timeline-img cd-picture">
                         </div>
+                        <div class="cd-timeline-content">
 
-                        <div class="contenu_onglet" id="contenu_onglet_chauffeur">
-
-                            <div class="dev">
-
-                                <div class="devUn">
-
-                                    <div class="devUnQuart quartUn">
-
-                                        <h2>Transports Celsius | 2009 - 2016</h2>
-
-                                        <p>Société de transports de produits surgelés.</p>
-
-                                        <p class="part2">Chauffeur poids lourd régional, transport de lots. <br>Formateur
-                                            au près des nouveaux salariés.</p>
-
-                                    </div>
-
-                                    <div class="sep2"></div>
-
-                                    <div class="sep3"></div>
-
-                                    <div class="devUnQuart quartDeux">
-
-                                        <h2>Transports Corre | 2 mois en 2009</h2>
-
-                                        <p>Société de transports frigorifique.</p>
-
-                                        <p class="part2">Chauffeur poids lourd régional, transport de lots.</p>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="sep"></div>
-
-                                <div class="devDeux">
-
-                                    <div class="sep3"></div>
-
-                                    <div class="devUnQuart quartTrois">
-
-                                        <h2>Routiers Bretons | 4 mois en 2008</h2>
-
-                                        <p>Société de transports générique.</p>
-
-                                        <p class="part2">Chauffeur poids lourd régional, transport de lots et de
-                                            messagerie.</p>
-
-                                    </div>
-
-                                    <div class="sep2"></div>
-
-                                    <div class="sep3"></div>
-
-                                    <div class="devUnQuart quartQuatre">
-
-                                        <h2>Mory Team | 2007 - 2008</h2>
-
-                                        <p>Société de transports générique, financeur de mon titre professionel.</p>
-
-                                        <p class="part2 tab2">Chauffeur poids lourd local, livraisons de messageries.</p>
-
-                                    </div>
-
-                                </div>
+                            <div class="flex items-center">
+                                <h2><a href="https://www.cgemy.com/" target="_blank" rel="noopener noreferrer">Cédric
+                                        Gémy</a></h2>
+                                <span class="text-gray-dark text-sm">&nbsp;- Stage</span>
+                            </div>
+                            <div class="timeline-content-info">
+                                <span class="timeline-content-info-title">
+                                    <i class="la la-code" aria-hidden="true"></i>
+                                    Développeur full-stack
+                                </span>
+                                <span class="timeline-content-info-date">
+                                    <i class="la la-calendar-o" aria-hidden="true"></i>
+                                    Avril 2018 - Juin 2018
+                                </span>
+                            </div>
+                            <p>
+                                Développement avec Python et son framework Django sur la plateforme interne de l'école
+                                gérée
+                                par Cédric Gémy : <a class="text-orange hover:text-orange-lighter"
+                                    href="https://activdesign.eu/" target="_blank"
+                                    rel="noopener noreferrer">Activdesign</a>.
+                            </p>
+                            <div class="text-right">
 
                             </div>
-
+                            <ul class="content-skills">
+                                <li>CakePHP</li>
+                                <li>JS - JQuery</li>
+                                <li>CSS</li>
+                                <li>SQL</li>
+                            </ul>
+                        </div> <!-- cd-timeline-content -->
+                    </div> <!-- cd-timeline-block -->
+                    <div class="cd-timeline-block" data-aos="fade-up">
+                        <div class="cd-timeline-img cd-picture">
                         </div>
+                        <div class="cd-timeline-content">
 
-                        <div class="contenu_onglet" id="contenu_onglet_autres">
-
-                            <div class="autre">
-
-                                <h2>Petits boulots entre 2004 et 2007 à Rennes</h2>
-
-                                <ul>
-
-                                    <li>Dépannage informatique par téléphone au service interne des AGF (Allianz)</li>
-
-                                    <li>Nettoyage des rotatives chez Ouest France</li>
-
-                                    <li>Nombreuses activités ponctuels en intérim</li>
-
-                                    <li>Livraison de pizzas chez Speed Rabbit</li>
-
-                                    <li>Livraison de surgelés chez Maximo</li>
-
-                                    <li>Livraison de colis chez Colissimo</li>
-
-                                </ul>
+                            <div class="flex items-center">
+                                <h2><a href="https://www.mydigitalschool.com/" target="_blank"
+                                        rel="noopener noreferrer">My
+                                        Digital School</a></h2>
+                            </div>
+                            <div class="timeline-content-info">
+                                <span class="timeline-content-info-title">
+                                    <i class="la la-certificate" aria-hidden="true"></i>
+                                    Étudiant développeur Web
+                                </span>
+                                <span class="timeline-content-info-date">
+                                    <i class="la la-calendar-o" aria-hidden="true"></i>
+                                    Octobre 2017 - Juin 2020
+                                </span>
+                            </div>
+                            <p>
+                                Le Bachelor Développeur Web est une formation en 3 ans qui permet de faire l’acquisition
+                                de la méthodologie de travail et de gestion d’un projet web ou mobile de sa conception,
+                                en
+                                passant par son développement et sa mise en production.
+                            </p>
+                            <p>
+                                La formation s’articule autour de l’assimilation des concepts et compétences
+                                techniques du web indispensables pour évoluer par la suite dans cet univers
+                                professionnel.
+                                S’y ajoute un bagage de compétences transversales (e-business, marketing, gestion de
+                                projet).
+                            </p>
+                            <p>
+                                Le détail du programme est disponible sur le site de <a
+                                    class="text-orange hover:text-orange-lighter" target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://www.mydigitalschool.com/bachelor-developpeur-digital-web">My
+                                    Digital School</a>
+                            </p>
+                            <div class="text-right">
 
                             </div>
-
+                            <ul class="content-skills">
+                                <li>HTML / CSS</li>
+                                <li>PHP</li>
+                                <li>Java</li>
+                                <li>Android</li>
+                                <li>Javascript - Node.js - Angular - Vue.js</li>
+                                <li>Modélisation</li>
+                                <li>Méthodes agiles</li>
+                                <li>Tests</li>
+                                <li>Persistance - SQL - DAO - ORM</li>
+                            </ul>
+                        </div> <!-- cd-timeline-content -->
+                    </div> <!-- cd-timeline-block -->
+                    <div class="cd-timeline-block" data-aos="fade-up">
+                        <div class="cd-timeline-img cd-picture">
                         </div>
+                        <div class="cd-timeline-content">
 
-                    </div>
+                            <div class="flex items-center">
+                                <h2>Et avant ?</h2>
+                            </div>
+                            <div class="timeline-content-info">
+                                <span class="timeline-content-info-title">
+                                    <i class="la la-truck" aria-hidden="true"></i>
+                                    Chauffeur poids lourd
+                                </span>
+                                <span class="timeline-content-info-date">
+                                    <i class="la la-calendar-o" aria-hidden="true"></i>
+                                    Octobre 2007 - Février 2016
+                                </span>
+                            </div>
+                            <p>
+                                Conduite de poids lourd et super lourd durant plus de 8 ans.
+                            </p>
+                            <div class="text-right">
 
-                </div>
-
+                            </div>
+                            <ul class="content-skills">
+                                <li>CakePHP</li>
+                                <li>JS - JQuery</li>
+                                <li>CSS</li>
+                                <li>SQL</li>
+                            </ul>
+                        </div> <!-- cd-timeline-content -->
+                    </div> <!-- cd-timeline-block -->
+                </section> <!-- cd-timeline -->
             </div>
+            <!-- Hero -->
+            <div class="my-6">
+                <div id="footer" class="w-11/12 h-96 rounded-xl m-auto flex items-center">
+                    <div class="flex flex-col lg:flex-row justify-between w-full">
+                        <div class="w-10/12 m-auto lg:-m-0 lg:w-1/2">
+                            <div class="w-full lg:w-7/12 lg:m-auto text-white text-center lg:text-left">
+                                <h2 class="text-3xl lg:text-5xl font-bold font-title">Mathieu
+                                    Collet</h2>
+                                <h2 class="text-3xl lg:text-5xl font-bold font-title lg:hidden">Développeur full-stack
+                                </h2>
 
-        </section>
-
+                                <p class="pt-6">
+                                    <a href="mailto:mayeut@gmail.com">mayeut@gmail.com</a>
+                                </p>
+                                <p class="pt-2">
+                                    5, rue des Cèdres
+                                </p>
+                                <p>
+                                    35150 Janzé
+                                </p>
+                                <p class="pt-2">
+                                    06 32 58 24 08
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w-10/12 m-auto lg:m-0 lg:w-1/2">
+                            <div class="w-full lg:w-7/12 lg:m-auto text-white text-center lg:text-right">
+                                <h2 class="text-3xl lg:text-5xl font-bold font-title hidden lg:block">Développeur
+                                    full-stack</h2>
+                                <p class="pt-6">
+                                    <a href="https://www.linkedin.com/in/mathieu-collet-80a799151/">LinkedIn</a>
+                                </p>
+                                <p class="pt-2">
+                                    <a href="https://twitter.com/mayeut35">Twitter</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-
-    <!-- #-------------------------------# -->
-    <!-- #- FOOTER                      -# -->
-    <!-- #-------------------------------# -->
-
-    <footer>
-
-        <div class="foot">
-
-            <div class="contact" id="contact">
-
-                <p>5, rue des Cèdres</p>
-
-                <p>35150 Janzé</p>
-
-                <p>Tél : 06 32 58 24 08</p>
-
-                <p>Email : <a href="mailto:coco@mds.org">mayeut@gmail.com</a></p>
-
-            </div>
-
-            <div class="rezos">
-
-                <div class="svg-wrapper">
-
-                    <svg height="50" width="50" xmlns="http://www.w3.org/2000/svg">
-
-                        <rect class="shape" height="50" width="50" stroke="red" stroke-width="4px" />
-
-                    </svg>
-
-                    <div class="text">
-
-                        <a href="https://www.linkedin.com/in/mathieu-collet-80a799151/" title="www.linkedin.com">
-
-                            <img src="img/linkedin.png" alt="LinkedIn">
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <div class="svg-wrapper2">
-
-                    <svg height="50" width="50" xmlns="http://www.w3.org/2000/svg">
-
-                        <rect class="shape2" height="50" width="50" stroke="red" stroke-width="4px" />
-
-                    </svg>
-
-                    <div class="text2">
-
-                        <a href="https://twitter.com/mayeut35" title="twitter.com">
-
-                            <img src="img/twitter.png" alt="Twitter">
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </footer>
-
-    <div class="menuBouton">
-
-        <a href="#cd-nav" class="cd-nav-trigger">
-
-            <span class="cd-nav-icon"></span>
-
-            <svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
-
-                <circle fill="transparent" stroke="#656e79" stroke-width="1" cx="27" cy="27" r="25" stroke-dasharray="157 157"
-                    stroke-dashoffset="157"></circle>
-
-            </svg>
-        </a>
-
-        <div id="cd-nav" class="cd-nav">
-
-            <div class="cd-navigation-wrapper">
-
-                <div class="cd-half-block">
-
-                    <h2>Navigation</h2>
-
-                    <nav>
-
-                        <ul class="cd-primary-nav">
-
-                            <li><a href="#accueil" class="selected">Accueil</a></li>
-
-                            <li><a href="#aPropos">À propos</a></li>
-
-                            <li><a href="#competences">Compétences</a></li>
-
-                            <li><a href="#formations">Formations</a></li>
-
-                            <li><a href="#experiences">Expériences</a></li>
-
-                            <li class="contactMobil"><a href="#contact">Contact</a></li>
-
-                        </ul>
-
-                    </nav>
-
-                </div>
-
-                <div class="cd-half-block">
-
-                    <address>
-
-                        <ul class="cd-contact-info">
-
-                            <li><a href="mailto:mayeut@gmail.com">mayeut@gmail.com</a></li>
-
-                            <li>06 32 58 24 08</li>
-
-                            <li>
-
-                                <span>5, rue des Cèdres</span>
-
-                                <span>35150 - Janzé</span>
-
-                            </li>
-
-                            <li>
-
-                                <div class="rezos2" id="contact2">
-
-                                    <a href="https://www.linkedin.com/in/mathieu-collet-80a799151/" title="www.linkedin.com">
-
-                                        <img src="img/linkedin.png" alt="LinkedIn">
-
-                                    </a>
-
-                                    <a href="https://twitter.com/mayeut35" title="twitter.com">
-
-                                        <img src="img/twitter.png" alt="Twitter">
-
-                                    </a>
-
-                                </div>
-
-                            </li>
-
-                        </ul>
-
-                    </address>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- #-------------------------------# -->
-    <!-- #- SCRIPTS                     -# -->
-    <!-- #-------------------------------# -->
-
-    <!-- ###############################  LIBRARIES  ################################## -->
-
-    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-
-    <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-    <script type='text/javascript' src='scripts/jquery.lazylinepainter-1.7.0.min.js'></script>
-
-    <script type='text/javascript' src="js/modernizr.js"></script>
-
-    <!-- ###############################  SCRIPTS  ################################## -->
-
-    <script type="text/javascript" src="scripts/arroweffect.js"></script>
-
-    <script type="text/javascript" src="scripts/barres.js"></script>
-
-    <script type="text/javascript" src="scripts/cardeffect.js"></script>
-
-    <script type="text/javascript" src="scripts/hoveronglets.js"></script>
-
-    <script type="text/javascript" src="scripts/main.js"></script>
-
-    <script type="text/javascript" src="scripts/scrollscript.js"></script>
-
-    <script type="text/javascript" src="scripts/smoothscroll.js"></script>
-
-    <script type="text/javascript" src="scripts/title.js"></script>
-
-    <script type="text/javascript" src="scripts/topscroll.js"></script>
-
+    <script src="node_modules/aos/dist/aos.js"></script>
+    <script src="js/resume.js"></script>
 </body>
 
 </html>
